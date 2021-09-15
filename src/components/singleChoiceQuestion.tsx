@@ -22,6 +22,7 @@ export const SingleChoiceQuestion = ({
   );
 
   const shuffledChoices = useMemo(() => {
+    // arrayShuffle does not mutate the array
     return arrayShuffle(actualChoices);
   }, []);
 
@@ -66,23 +67,20 @@ export const SingleChoiceQuestion = ({
         <div className="flex flex-col gap-y-3">
           <Question question={question} />
           <div className="flex flex-col gap-y-3">
-            {
-              // ArrayShuffle does not mutate the array
-              shuffledChoices.map((value) => {
-                return (
-                  <label key={value} className="flex gap-x-3 items-center">
-                    <input
-                      type="checkbox"
-                      name={question}
-                      value={value}
-                      checked={selectedRadio === value}
-                      onChange={onChangeValue}
-                    />
-                    <span className="text-wide">{value}</span>
-                  </label>
-                );
-              })
-            }
+            {shuffledChoices.map((value) => {
+              return (
+                <label key={value} className="flex gap-x-3 items-center">
+                  <input
+                    type="checkbox"
+                    name={question}
+                    value={value}
+                    checked={selectedRadio === value}
+                    onChange={onChangeValue}
+                  />
+                  <span className="text-wide">{value}</span>
+                </label>
+              );
+            })}
           </div>
         </div>
         <div className="flex gap-x-4">
@@ -113,7 +111,7 @@ export const SingleChoiceQuestion = ({
 
         return (
           <p
-            className={`border-2 p-3 ${
+            className={`border-2 p-3 font-semibold ${
               isCorrectAnswer ? "border-green-500" : "border-red-500"
             }`}
           >

@@ -39,7 +39,7 @@ export const OneLineQuestion = ({
 
   const onFormSubmission = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const lowerUserAnswer = userAnswer.toLocaleLowerCase();
+    const lowerUserAnswer = userAnswer.toLocaleLowerCase().trim();
     const isExact = lowerCaseAnswer === lowerUserAnswer;
 
     if (isExact) {
@@ -93,7 +93,7 @@ export const OneLineQuestion = ({
   return (
     <div className="flex flex-col gap-y-5">
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmission}>
-        <label className="flex flex-col gap-y-2">
+        <label className="flex flex-col gap-y-3">
           <Question question={question} />
           {textarea ? (
             <textarea

@@ -1,5 +1,6 @@
 import React from "react";
 import { OneLineQuestion } from "./components/oneLineQues";
+import { SingleChoiceQuestion } from "./components/singleChoicQuestion";
 
 export const App = () => {
   return (
@@ -15,13 +16,10 @@ export const App = () => {
           "fixed chemical composition",
         ]}
       />
-      <OneLineQuestion
-        question="What are Rocks"
-        answer="Rock are naturally aggregate of minerals        "
-        keywords={[
-          "aggregate",
-          "minerals"
-        ]}
+      <SingleChoiceQuestion
+      question="What are different types of minerals"
+      choices={["Essential, Accessory", "Clastic, Non Clastic", "Rutaceous, Arenaceous, Argillaceous"]}
+      answer={0}
       />
     </div>
   );

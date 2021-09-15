@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Question } from "./question";
 
 export type OneLineQuestionProps = {
   question: string;
@@ -93,7 +94,7 @@ export const OneLineQuestion = ({
     <div className="flex flex-col gap-y-5">
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmission}>
         <label className="flex flex-col gap-y-2">
-          <h3 className="font-semibold text-lg">{question}</h3>
+          <Question question={question} />
           {textarea ? (
             <textarea
               value={userAnswer}

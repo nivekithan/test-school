@@ -1,45 +1,28 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from "react";
+import { OneLineQuestion } from "./components/oneLineQues";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div className="mx-[10%] mt-20 flex flex-col gap-y-10">
+      <OneLineQuestion
+        question="What are minerals"
+        answer="Minerals are natural, solid substances, inorganic with definite inter atomic structure and fixed chemical composition"
+        keywords={[
+          "Natural",
+          "Solid Substances",
+          "inorganic",
+          "inter atomic structure",
+          "fixed chemical composition",
+        ]}
+      />
+      <OneLineQuestion
+        question="What are Rocks"
+        answer="Rock are naturally aggregate of minerals        "
+        keywords={[
+          "aggregate",
+          "minerals"
+        ]}
+      />
     </div>
-  )
-}
-
-export default App
+  );
+};

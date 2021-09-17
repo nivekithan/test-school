@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { Question } from "./question";
+import {
+  ClearButton,
+  GreenBorder,
+  Question,
+  RedBorder,
+  SubmitButton,
+  TextInput,
+  ToggleAnswerButton,
+} from "../common";
 
 export type OneLineQuestionProps = {
   question: string;
   answer: string;
   keywords: string[];
-  textarea?: boolean;
 };
 
 type AnswerState = {
@@ -17,7 +24,6 @@ export const OneLineQuestion = ({
   question,
   answer: actualAnswer,
   keywords: actualKeywords,
-  textarea = false,
 }: OneLineQuestionProps) => {
   const lowerCaseKeywords = actualKeywords.map((value) =>
     value.toLocaleLowerCase()
@@ -95,39 +101,16 @@ export const OneLineQuestion = ({
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmission}>
         <label className="flex flex-col gap-y-3">
           <Question question={question} />
-          {textarea ? (
-            <textarea
-              value={userAnswer}
-              onChange={onValueChange}
-              className="border-1 border-gray-600 p-2 rounded"
-            />
-          ) : (
-            <input
-              value={userAnswer}
-              onChange={onValueChange}
-              className="border-1 border-gray-600 p-2 rounded"
-            />
-          )}
+
+          <TextInput value={userAnswer} onChange={onValueChange} />
         </label>
         <div className="flex gap-x-4">
-          <button
-            type="submit"
-            className="bg-blue-500 px-3 py-2 text-white rounded border-2 border-blue-500"
-          >
-            Submit
-          </button>
-          <button
-            className="border-2 bg-green-500 py-2 px-3 text-white rounded border-green-500"
+          <SubmitButton />
+          <ToggleAnswerButton
             onClick={onShowAnswer}
-          >
-            {showAnswer ? "Hide Answer" : "Show Answer"}
-          </button>
-          <button
-            className="border-2 border-black border-opacity-30 rounded px-5 py-2 text-gray-600"
-            onClick={onClear}
-          >
-            Clear
-          </button>
+            isAnswerBeingShown={showAnswer}
+          />
+          <ClearButton onClick={onClear} />
         </div>
       </form>
       <AnswerMeta state={answerState} />
@@ -148,9 +131,9 @@ const AnswerMeta = ({ state }: AnswerMetaProps) => {
   if (state.isExact) {
     return (
       <div>
-        <p className="p-3 border-2 border-green-500 font-semibold text-dark-300">
-          Answer is correct
-        </p>
+        <GreenBorder>
+          <p className="font-semibold">Answer is correct</p>
+        </GreenBorder>
       </div>
     );
   }
@@ -167,36 +150,34 @@ const AnswerMeta = ({ state }: AnswerMetaProps) => {
   );
 
   return (
-    <div
-      className={`p-3 border-2 font-semibold text-dark-300 ${
-        isAllKeywordsMatched ? "border-yellow-500" : "border-red-500"
-      }`}
-    >
-      <p>
-        Answer is not exact{" "}
-        {isAllKeywordsMatched
-          ? "but all keywords matched"
-          : "and all keywords are not matched"}
-      </p>
-      <p>
-        Keyword matched :{" "}
-        <span className="text-green-500">
-          {Object.keys(state.keywordMatched)
-            .map((value) => (state.keywordMatched[value] ? value : undefined))
-            .filter((value) => value)
-            .join(",")}
-        </span>
-      </p>
-      <p>
-        Keyword not matched :{" "}
-        <span className="text-red-500">
-          {Object.keys(state.keywordMatched)
-            .map((value) => (state.keywordMatched[value] ? undefined : value))
-            .filter((value) => value)
-            .join(",")}
-        </span>
-      </p>
-    </div>
+    <RedBorder>
+      <div className="font-semibold">
+        <p>
+          Answer is not exact{" "}
+          {isAllKeywordsMatched
+            ? "but all keywords matched"
+            : "and all keywords are not matched"}
+        </p>
+        <p>
+          Keyword matched :{" "}
+          <span className="text-green-500">
+            {Object.keys(state.keywordMatched)
+              .map((value) => (state.keywordMatched[value] ? value : undefined))
+              .filter((value) => value)
+              .join(",")}
+          </span>
+        </p>
+        <p>
+          Keyword not matched :{" "}
+          <span className="text-red-500">
+            {Object.keys(state.keywordMatched)
+              .map((value) => (state.keywordMatched[value] ? undefined : value))
+              .filter((value) => value)
+              .join(",")}
+          </span>
+        </p>
+      </div>
+    </RedBorder>
   );
 };
 
@@ -207,9 +188,7 @@ type RenderAnswerProps = {
 const RenderAnswer = ({ answer }: RenderAnswerProps) => {
   return (
     <p className="p-3 border-2 border-green-500">
-      <span className="font-semibold">Answer :</span>
-      {" "}
-      {answer}
+      <span className="font-semibold">Answer :</span> {answer}
     </p>
   );
 };

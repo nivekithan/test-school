@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Question } from "./question";
+import {
+  ClearButton,
+  GreenBorder,
+  Question,
+  RedBorder,
+  SubmitButton,
+  TextInput,
+  ToggleAnswerButton,
+} from "../common";
 
 export type MultipleInputQuestionProps = {
   question: string;
@@ -93,10 +101,8 @@ export const MultipleInputQuestion = ({
               return (
                 <label className="flex gap-x-2 items-end" key={i}>
                   <span className="">{`${i + 1}. `}</span>
-                  <input
-                    type="text"
+                  <TextInput
                     value={userAnswer[i]}
-                    className="border-1 border-gray-600 rounded p-1"
                     onChange={onValueChange(i)}
                   />
                 </label>
@@ -105,24 +111,13 @@ export const MultipleInputQuestion = ({
           </div>
         </div>
         <div className="flex gap-x-4">
-          <button
-            type="submit"
-            className="bg-blue-500 px-3 py-2 text-white rounded border-2 border-blue-500"
-          >
-            Submit
-          </button>
-          <button
-            className="border-2 bg-green-500 py-2 px-3 text-white rounded border-green-500"
+          <SubmitButton />
+
+          <ToggleAnswerButton
             onClick={onToggleAnswer}
-          >
-            {showAnswer ? "Hide Answer" : "Show Answer"}
-          </button>
-          <button
-            className="border-2 border-black border-opacity-30 rounded px-5 py-2 text-gray-600"
-            onClick={onClear}
-          >
-            Clear
-          </button>
+            isAnswerBeingShown={showAnswer}
+          />
+          <ClearButton onClick={onClear} />
         </div>
       </form>
       <RenderAnswerState state={answerState} />
@@ -140,12 +135,16 @@ const RenderAnswerState = ({ state }: RenderAnswerStateProps) => {
     return null;
   }
 
+  if (state.isCorrect) {
+    return (
+      <GreenBorder>
+        <p className="font-semibold">Answer is correct</p>
+      </GreenBorder>
+    );
+  }
+
   return (
-    <div
-      className={`border-2 p-3 ${
-        state.isCorrect ? "border-green-500" : "border-red-500"
-      } `}
-    >
+    <RedBorder>
       <p>
         <span className="font-semibold">Correct Answers :</span>{" "}
         <span className="text-green-500">{state.rightAnswers.join(", ")}</span>
@@ -154,7 +153,7 @@ const RenderAnswerState = ({ state }: RenderAnswerStateProps) => {
         <span className="font-semibold">Wrong Answers :</span>{" "}
         <span className="text-red-500">{state.wrongAnswers.join(", ")}</span>
       </p>
-    </div>
+    </RedBorder>
   );
 };
 
@@ -164,7 +163,7 @@ type RenderAnswerProps = {
 
 const RenderAnswers = ({ answer }: RenderAnswerProps) => {
   return (
-    <div className="p-3 border-2 border-green-500">
+    <GreenBorder>
       <ol className="list-decimal list-inside">
         {answer.map((value, i) => {
           return (
@@ -174,6 +173,6 @@ const RenderAnswers = ({ answer }: RenderAnswerProps) => {
           );
         })}
       </ol>
-    </div>
+    </GreenBorder>
   );
 };

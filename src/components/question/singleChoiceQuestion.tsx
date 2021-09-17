@@ -1,6 +1,13 @@
 import arrayShuffle from "array-shuffle";
 import React, { useMemo, useState } from "react";
-import { Question } from "./question";
+import {
+  ClearButton,
+  GreenBorder,
+  Question,
+  RedBorder,
+  SubmitButton,
+  ToggleAnswerButton,
+} from "../common";
 
 export type SingleChoiceQuestionProps = {
   question: string;
@@ -11,8 +18,10 @@ export type SingleChoiceQuestionProps = {
 export const SingleChoiceQuestion = ({
   question,
   choices: actualChoices,
-  answer: actualAnswer,
+  answer: actualAnswer_,
 }: SingleChoiceQuestionProps) => {
+  const actualAnswer = actualAnswer_ - 1;
+
   const [selectedRadio, setSelectedRadio] = useState<string | undefined>(
     undefined
   );
@@ -84,24 +93,12 @@ export const SingleChoiceQuestion = ({
           </div>
         </div>
         <div className="flex gap-x-4">
-          <button
-            type="submit"
-            className="bg-blue-500 px-3 py-2 text-white rounded border-2 border-blue-500"
-          >
-            Submit
-          </button>
-          <button
-            className="bg-green-500 py-2 px-3 text-white rounded border-2 border-green-500"
+          <SubmitButton />
+          <ToggleAnswerButton
             onClick={onToggleAnswer}
-          >
-            {showAnswer ? "Hide Answer" : "Show Answer"}
-          </button>
-          <button
-            className="border-2 border-black border-opacity-30 rounded px-5 py-2 text-gray-600"
-            onClick={onClear}
-          >
-            Clear
-          </button>
+            isAnswerBeingShown={showAnswer}
+          />
+          <ClearButton onClick={onClear} />
         </div>
       </form>
       {(() => {
@@ -109,14 +106,14 @@ export const SingleChoiceQuestion = ({
           return null;
         }
 
-        return (
-          <p
-            className={`border-2 p-3 font-semibold ${
-              isCorrectAnswer ? "border-green-500" : "border-red-500"
-            }`}
-          >
-            {isCorrectAnswer ? "Answer is correct" : "Answer is incorrect"}
-          </p>
+        return isCorrectAnswer ? (
+          <GreenBorder>
+            <p className="font-semibold">Answer is correct</p>
+          </GreenBorder>
+        ) : (
+          <RedBorder>
+            <p className="font-semibold">Answer is incorrect</p>
+          </RedBorder>
         );
       })()}
       {(() => {
@@ -125,10 +122,12 @@ export const SingleChoiceQuestion = ({
         }
 
         return (
-          <p className="p-3 border-green-500 border-2">
-            <span className="font-semibold">Answer: </span>{" "}
-            <span>{actualChoices[actualAnswer]}</span>
-          </p>
+          <GreenBorder>
+            <p>
+              <span className="font-semibold">Answer: </span>{" "}
+              <span>{actualChoices[actualAnswer]}</span>
+            </p>
+          </GreenBorder>
         );
       })()}
     </div>

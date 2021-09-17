@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   ClearButton,
+  FillQuestion,
   GreenBorder,
   Question,
   RedBorder,
@@ -10,7 +11,7 @@ import {
 } from "../common";
 
 export type MultipleInputQuestionProps = {
-  question: string;
+  question: string | string[];
   answer: string[];
 };
 
@@ -95,7 +96,12 @@ export const MultipleInputQuestion = ({
     <div className="flex flex-col gap-y-5">
       <form onSubmit={onFormSubmit} className="flex flex-col gap-y-5">
         <div className="flex flex-col gap-y-3">
-          <Question question={question} />
+          {typeof question === "string" ? (
+            <Question question={question} />
+          ) : (
+            <FillQuestion question={question} />
+          )}
+
           <div className="flex flex-col gap-y-3">
             {answer.map((_, i) => {
               return (

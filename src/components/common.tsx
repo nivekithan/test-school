@@ -4,6 +4,28 @@ export const Question = ({ question }: { question: string }) => {
   return <h3 className="font-semibold text-lg">{question}</h3>;
 };
 
+export type FillInTheBlanksQuestionProps = {
+  question: string[];
+};
+
+export const FillQuestion = ({ question }: FillInTheBlanksQuestionProps) => {
+  return (
+    <p className="font-semibold text-lg">
+      {question.map((value, i, ar) => {
+        if (i === ar.length - 1) {
+          return <span>{value}</span>;
+        }
+
+        return (
+          <span>
+            {value} <span>{"_______"}</span>{" "}
+          </span>
+        );
+      })}
+    </p>
+  );
+};
+
 export const SubmitButton = () => {
   return (
     <button

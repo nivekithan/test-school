@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   ClearButton,
+  FillQuestion,
   GreenBorder,
   Question,
   RedBorder,
@@ -10,7 +11,7 @@ import {
 } from "../common";
 
 export type OneLineQuestionProps = {
-  question: string;
+  question: string | string[];
   answer: string;
   keywords: string[];
 };
@@ -100,7 +101,11 @@ export const OneLineQuestion = ({
     <div className="flex flex-col gap-y-5">
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmission}>
         <label className="flex flex-col gap-y-3">
-          <Question question={question} />
+          {typeof question === "string" ? (
+            <Question question={question} />
+          ) : (
+            <FillQuestion question={question} />
+          )}
 
           <TextInput value={userAnswer} onChange={onValueChange} />
         </label>

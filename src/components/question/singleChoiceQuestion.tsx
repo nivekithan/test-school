@@ -2,6 +2,7 @@ import arrayShuffle from "array-shuffle";
 import React, { useMemo, useState } from "react";
 import {
   ClearButton,
+  FillQuestion,
   GreenBorder,
   Question,
   RedBorder,
@@ -10,7 +11,7 @@ import {
 } from "../common";
 
 export type SingleChoiceQuestionProps = {
-  question: string;
+  question: string | string[];
   choices: string[];
   answer: number;
 };
@@ -74,14 +75,22 @@ export const SingleChoiceQuestion = ({
     <div className="flex flex-col gap-y-5">
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmit}>
         <div className="flex flex-col gap-y-3">
-          <Question question={question} />
+          {typeof question === "string" ? (
+            <Question question={question} />
+          ) : (
+            <FillQuestion question={question} />
+          )}
           <div className="flex flex-col gap-y-3">
             {shuffledChoices.map((value) => {
               return (
                 <label key={value} className="flex gap-x-3 items-center">
                   <input
                     type="checkbox"
-                    name={question}
+                    name={
+                      typeof question === "string"
+                        ? question
+                        : question.join(" ")
+                    }
                     value={value}
                     checked={selectedRadio === value}
                     onChange={onChangeValue}

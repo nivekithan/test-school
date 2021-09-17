@@ -1,4 +1,5 @@
 import React from "react";
+import { FillInTheBlanks } from "./components/question/fillInTheBlanks";
 import { MultipleInputQuestion } from "./components/question/multipleInputQuestion";
 import { OneLineQuestion } from "./components/question/oneLineQues";
 import { SingleChoiceQuestion } from "./components/question/singleChoiceQuestion";
@@ -32,7 +33,6 @@ export const App = () => {
         answer={3}
       />
       <OneLineQuestion
-        textarea
         question="Define petroleum reserve"
         answer="Those quantities of petroleum which by analysis of geo science and engineering data can be estimated with reasonable certainty to be commercially recoverable from a given date forward, from known reservoirs and under defined economic condition, operation methods and government regulations"
         keywords={[

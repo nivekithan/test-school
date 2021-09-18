@@ -13,22 +13,16 @@ import {
 export type OneLineQuestionProps = {
   question: string | string[];
   answer: string;
-  keywords: string[];
 };
 
 type AnswerState = {
   isExact: boolean;
-  keywordMatched: { [index: string]: boolean };
 };
 
 export const OneLineQuestion = ({
   question,
   answer: actualAnswer,
-  keywords: actualKeywords,
 }: OneLineQuestionProps) => {
-  const lowerCaseKeywords = actualKeywords.map((value) =>
-    value.toLocaleLowerCase()
-  );
   const lowerCaseAnswer = actualAnswer.toLocaleLowerCase();
 
   const [userAnswer, setUserAnswer] = useState("");
@@ -49,40 +43,7 @@ export const OneLineQuestion = ({
     const lowerUserAnswer = userAnswer.toLocaleLowerCase().trim();
     const isExact = lowerCaseAnswer === lowerUserAnswer;
 
-    if (isExact) {
-      const matchKeywords = lowerCaseKeywords.reduce(
-        (acc: { [index: string]: boolean }, curr) => {
-          acc[curr] = true;
-          return acc;
-        },
-        {}
-      );
-
-      setAnswerState({ isExact: true, keywordMatched: matchKeywords });
-      return;
-    } else {
-      const defaultKeywords = lowerCaseKeywords.reduce(
-        (acc: { [index: string]: boolean }, curr) => {
-          acc[curr] = false;
-          return acc;
-        },
-        {}
-      );
-
-      const matchKeywords = lowerCaseKeywords.reduce(
-        (acc: { [index: string]: boolean }, curr) => {
-          if (lowerUserAnswer.includes(curr)) {
-            acc[curr] = true;
-          }
-
-          return acc;
-        },
-        { ...defaultKeywords }
-      );
-
-      setAnswerState({ isExact: false, keywordMatched: matchKeywords });
-      return;
-    }
+    setAnswerState({ isExact });
   };
 
   const onShowAnswer = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -143,44 +104,10 @@ const AnswerMeta = ({ state }: AnswerMetaProps) => {
     );
   }
 
-  const isAllKeywordsMatched = Object.values(state.keywordMatched).reduce(
-    (acc: boolean, curr) => {
-      if (!curr) {
-        return false;
-      }
-
-      return acc;
-    },
-    true
-  );
-
   return (
     <RedBorder>
       <div className="font-semibold">
-        <p>
-          Answer is not exact{" "}
-          {isAllKeywordsMatched
-            ? "but all keywords matched"
-            : "and all keywords are not matched"}
-        </p>
-        <p>
-          Keyword matched :{" "}
-          <span className="text-green-500">
-            {Object.keys(state.keywordMatched)
-              .map((value) => (state.keywordMatched[value] ? value : undefined))
-              .filter((value) => value)
-              .join(",")}
-          </span>
-        </p>
-        <p>
-          Keyword not matched :{" "}
-          <span className="text-red-500">
-            {Object.keys(state.keywordMatched)
-              .map((value) => (state.keywordMatched[value] ? undefined : value))
-              .filter((value) => value)
-              .join(",")}
-          </span>
-        </p>
+        <p>Answer is wrong </p>
       </div>
     </RedBorder>
   );

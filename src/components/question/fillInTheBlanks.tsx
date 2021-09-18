@@ -27,7 +27,6 @@ export const FillInTheBlanks = ({ question, answer }: FillInTheBlanksProps) => {
     undefined
   );
 
-  if (question.length !== answer.length + 1) throw Error("");
 
   const onValueChange = (num: number) => {
     return (e: React.ChangeEvent<HTMLInputElement>) => {

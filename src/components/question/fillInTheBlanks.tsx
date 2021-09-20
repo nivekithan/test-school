@@ -3,6 +3,7 @@ import {
   ClearButton,
   FillQuestion,
   GreenBorder,
+  Question,
   RedBorder,
   SubmitButton,
   TextInput,
@@ -10,7 +11,7 @@ import {
 } from "../common";
 
 export type FillInTheBlanksProps = {
-  question: string[];
+  question: string[] | string;
   answer: string[];
 };
 
@@ -26,7 +27,6 @@ export const FillInTheBlanks = ({ question, answer }: FillInTheBlanksProps) => {
   const [answerState, setAnswerState] = useState<AnswerState | undefined>(
     undefined
   );
-
 
   const onValueChange = (num: number) => {
     return (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -84,7 +84,11 @@ export const FillInTheBlanks = ({ question, answer }: FillInTheBlanksProps) => {
     <div className="flex flex-col gap-y-5">
       <form className="flex flex-col gap-y-5" onSubmit={onFormSubmission}>
         <div className="flex flex-col gap-y-3">
-          <FillQuestion question={question} />
+          {typeof question === "string" ? (
+            <Question question={question} />
+          ) : (
+            <FillQuestion question={question} />
+          )}
           {answer.map((_, i) => {
             return (
               <label className="flex gap-x-2 items-end" key={i}>

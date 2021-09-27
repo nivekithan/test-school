@@ -587,9 +587,9 @@ export const ITPO = () => {
         answer="Drilling well into a geologic structure in which no oil or gas has yet been discovered is called wildcat well"
       />
 
-      <OneLineQuestion
-        question="What is the purpose of drill string"
-        answer=""
+      <TrueOrFalse
+        question="On both Directional Drilling and Horizontal Drilling Heavy weight drill pipe will be used"
+        answer={true}
       />
     </>
   );

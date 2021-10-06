@@ -46,7 +46,7 @@ export const TextInput = ({ onChange, value }: TextInputProps) => {
   return (
     <input
       type="text"
-      className="border-1 border-gray-600 p-2 rounded"
+      className="border-1 border-gray-600 p-2 rounded flex-grow"
       value={value}
       onChange={onChange}
     />

@@ -13,11 +13,11 @@ export const FillQuestion = ({ question }: FillInTheBlanksQuestionProps) => {
     <p className="font-semibold text-lg">
       {question.map((value, i, ar) => {
         if (i === ar.length - 1) {
-          return <span>{value}</span>;
+          return <span key={i}>{value}</span>;
         }
 
         return (
-          <span>
+          <span key={i}>
             {value} <span>{"_______"}</span>{" "}
           </span>
         );

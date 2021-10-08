@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { compareTwoStrings } from "../../utils";
 import {
   ClearButton,
   FillQuestion,
@@ -45,28 +46,29 @@ export const MultipleInputQuestion = ({
 
   const onFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const lowerCaseActualAnswers: (string | undefined)[] = answer.map((value) =>
+    const copyOfAnswers: (string | undefined)[] = answer.map((value) =>
       value.toLocaleLowerCase().trim()
     );
 
     const correctAnswers: string[] = [];
     const wrongAnswers: string[] = [];
 
-    userAnswer.forEach((value) => {
-      const lowerCaseValue = value.toLocaleLowerCase().trim();
-      const answerIndex = lowerCaseActualAnswers.findIndex(
-        (value) => value === lowerCaseValue
+    userAnswer.forEach((userSingleAnswer) => {
+      const answerIndex = copyOfAnswers.findIndex(
+        (actualSingleAnswer) =>
+          actualSingleAnswer &&
+          compareTwoStrings(userSingleAnswer, actualSingleAnswer)
       );
 
       if (answerIndex >= 0) {
-        lowerCaseActualAnswers[answerIndex] = undefined;
+        copyOfAnswers[answerIndex] = undefined;
         correctAnswers.push(answer[answerIndex]);
       } else {
-        value && wrongAnswers.push(value);
+        userSingleAnswer && wrongAnswers.push(userSingleAnswer);
       }
     });
 
-    const isAnswersCorrect = lowerCaseActualAnswers.every(
+    const isAnswersCorrect = copyOfAnswers.every(
       (value) => value === undefined
     );
 

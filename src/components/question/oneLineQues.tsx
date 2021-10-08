@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { compareTwoStrings } from "../../utils";
 import {
   ClearButton,
   FillQuestion,
@@ -23,7 +24,6 @@ export const OneLineQuestion = ({
   question,
   answer: actualAnswer,
 }: OneLineQuestionProps) => {
-  const lowerCaseAnswer = actualAnswer.toLocaleLowerCase();
 
   const [userAnswer, setUserAnswer] = useState("");
   const [answerState, setAnswerState] = useState<AnswerState | undefined>(
@@ -40,8 +40,7 @@ export const OneLineQuestion = ({
 
   const onFormSubmission = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const lowerUserAnswer = userAnswer.toLocaleLowerCase().trim();
-    const isExact = lowerCaseAnswer === lowerUserAnswer;
+    const isExact = compareTwoStrings(actualAnswer, userAnswer);
 
     setAnswerState({ isExact });
   };

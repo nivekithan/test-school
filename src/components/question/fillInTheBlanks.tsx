@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { compareTwoStrings } from "../../utils";
 import {
   ClearButton,
   FillQuestion,
@@ -55,18 +56,11 @@ export const FillInTheBlanks = ({ question, answer }: FillInTheBlanksProps) => {
   const onFormSubmission = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const lowerCaseUserAnswers = userAnswer.map((value) =>
-      value.toLocaleLowerCase().trim()
-    );
-    const lowerCaseActualAnswer = answer.map((value) =>
-      value.toLocaleLowerCase().trim()
-    );
-
     const wrongAnswer: string[] = [];
     const correctAnswer: string[] = [];
 
-    const isAnswerCorrect = lowerCaseUserAnswers.every((value, i) => {
-      if (lowerCaseActualAnswer[i] === value) {
+    const isAnswerCorrect = answer.every((value, i) => {
+      if (compareTwoStrings(userAnswer[i], value)) {
         correctAnswer.push(userAnswer[i]);
 
         return true;

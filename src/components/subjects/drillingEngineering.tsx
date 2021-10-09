@@ -146,6 +146,11 @@ export const FunctionsOfDrillingFluids = () => {
         question={["The filter cake can become so thick that it may cause", ""]}
         answer={["Stuck pipe"]}
       />
+
+      <MultipleInputQuestion
+        question={["Ideal filter cake is", "and", ""]}
+        answer={["Thin", "Impermeable"]}
+      />
       <MultipleInputQuestion
         question={[
           "Pressure in the wellbore will be equal to P =",
@@ -154,6 +159,88 @@ export const FunctionsOfDrillingFluids = () => {
           "",
         ]}
         answer={["0.052", "MW", "TVD"]}
+      />
+
+      <OneLineQuestion
+        question={[
+          "Data from",
+          "will be useful in predicting borehole stability problems",
+        ]}
+        answer="Adjacent wells"
+      />
+
+      <OneLineQuestion
+        question={[
+          "",
+          "is one of the most common problems in drilling operations",
+        ]}
+        answer="Shale Instability"
+      />
+
+      <MultipleInputQuestion
+        question="What are the reasons for shale instability"
+        answer={[
+          "Pressure Differential between bottomhole pressure and the pore pressure",
+          "Hydration of the clays within shale by mud filtrate containing water",
+        ]}
+      />
+      <OneLineQuestion
+        question="How to overcome the pressure differential between bottomhole pressure and the pore pressure"
+        answer="Increase the mudweight"
+      />
+      <MultipleInputQuestion
+        question="How to overcome the hydration of clay"
+        answer={[
+          "Using non water based muds",
+          "Treating mud with chemicals to reduce the ability of water to hydrate the clays",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is inhibited mud"
+        answer="Mud treated with chemicals to reduce the ability of water to hydrate the clays"
+      />
+      <Essay
+        question="Why it is important to cool the bit"
+        points={[
+          [
+            "The rock cutting process will generate a great deal of",
+            "at the",
+            "",
+          ],
+          ["Unless the", "is", "it will", "and quickly", "out"],
+        ]}
+        answer={[
+          ["heat", "bit"],
+          ["bit", "cooled", "overheat", "wear"],
+        ]}
+      />
+      <FillInTheBlanks
+        question={["The power of mud pumps will be expended in", ""]}
+        answer={["Frictional Pressure"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "The efficiency of drilling process can be significantly improved if approximately",
+          "of power is expended at the",
+          "",
+        ]}
+        answer={["65%", "bit"]}
+      />
+      <MultipleInputQuestion
+        question="What are factors affecting the pressure loss in the system"
+        answer={[
+          "Geometry of system",
+          "viscosity",
+          "mud density",
+          "yield point",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="How can the loss of pressure can be reduced"
+        answer={[
+          "Changing the size of nozzles in the bit",
+          "Changing flowrate through the system",
+        ]}
       />
     </>
   );

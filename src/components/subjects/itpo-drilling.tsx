@@ -105,10 +105,7 @@ export const ITPODrillingAssembly = () => {
 
       <MultipleInputQuestion
         question="Why too much weight on bit is not desired"
-        answer={[
-          "Can cause damage to bit",
-          "Can cause drill string to buckle",
-        ]}
+        answer={["Can cause damage to bit", "Can cause drill string to buckle"]}
       />
       <MultipleInputQuestion
         question="Why less weight on bit is not desired"
@@ -138,6 +135,16 @@ export const ITPODrillingAssembly = () => {
         question="What is advantage for using MWD"
         answer={["Gives measurement at realtime", ""]}
       /> */}
+    </>
+  );
+};
+
+export const FinalITPO = () => {
+  return (
+    <>
+      <ITPODrilling />
+      <ITPODrillingRights />
+      <ITPODrillingAssembly />
     </>
   );
 };

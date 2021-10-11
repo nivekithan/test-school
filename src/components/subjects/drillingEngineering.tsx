@@ -4,7 +4,7 @@ import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
 
-export const FunctionsOfDrillingFluids = () => {
+const FunctionsOfDrillingFluids = () => {
   return (
     <>
       <FillInTheBlanks
@@ -242,6 +242,253 @@ export const FunctionsOfDrillingFluids = () => {
           "Changing flowrate through the system",
         ]}
       />
+    </>
+  );
+};
+
+const DrillString = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is drill string"
+        answer="Connection between the rig and drill bit"
+      />
+      <MultipleInputQuestion
+        question="What are the components of drill string"
+        answer={[
+          "Drill string subs",
+          "Kelly",
+          "Drill pipe",
+          "Drill collar",
+          "bit",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are the functions of drill string"
+        answer={[
+          "Compatible enough to withstand all forces and pressure",
+          "To suspend the bit",
+          "To transmit rotary torque from kelly to bit",
+          "To provide a conduit for circulating drilling fluid to bit",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "The drill collars and the other equipment which is made up just above the bit are collectively called",
+          "",
+        ]}
+        answer={["Bottom Hole assembly"]}
+      />
+    </>
+  );
+};
+
+const DrillPipe = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is Drill pipe"
+        answer="Seamless Pipe with threaded connections known as tool joints"
+      />
+
+      <OneLineQuestion
+        question="What is the name for the female end of connection of drill pipe"
+        answer="Box"
+      />
+      <OneLineQuestion
+        question="What is the name for the male end of connection of drill pipe"
+        answer="pin"
+      />
+      <OneLineQuestion
+        question={[
+          "Outer diameter of drill pipe must be",
+          "than diameter of main pipe",
+        ]}
+        answer="Greater"
+      />
+      <MultipleInputQuestion
+        question={["Each length of drill pipe is known as", "or", ""]}
+        answer={["Joint", "Single"]}
+      />
+      <OneLineQuestion
+        question="What is wet weight of drill pipe"
+        answer="Weight of drill pipe when suspended in a fluid"
+      />
+      <FillInTheBlanks
+        question={["Wet weight of drill pipe = ", "x", ""]}
+        answer={["Weight in air", "Buoyancy Factor"]}
+      />
+
+      <MultipleInputQuestion
+        question="What are the stresses the drill pipe is exposed to?"
+        answer={["Tension", "Torque", "Cyclic Stress Fatigue"]}
+      />
+
+      <Essay
+        question="Explain tension stress in drill pipe"
+        points={[
+          [
+            "The weight of suspended",
+            "exposes each",
+            "of drill pipe to several thousand pounds of",
+            "",
+          ],
+          ["Extra tension may be exerted due to", "when", "out of hole"],
+        ]}
+        answer={[
+          ["drillstring", "joint", "tensile load"],
+          ["overpull", "pulling"],
+        ]}
+      />
+      <Essay
+        question="Explain torque stress in drill pipe"
+        points={[
+          ["During drilling", "is transmitted down the string"],
+          ["", "condition can", "the amount of", "or", "on each", ""],
+        ]}
+        answer={[
+          ["rotation"],
+          ["Poor hole", "increase", "torque", "twisting force", "joint"],
+        ]}
+      />
+      <Essay
+        question="Explain cyclic stress Fatigue in drill pipe"
+        points={[
+          [
+            "In",
+            "holes, the",
+            "is exposed to",
+            "and",
+            "forces at points of",
+            "in the hole",
+          ],
+          ["As the string is", "each joint sustains a", "of", "and", "forces"],
+        ]}
+        answer={[
+          [
+            "Deviated holes",
+            "wall of pipe",
+            "compressive",
+            "tensile",
+            "bending",
+          ],
+          ["rotated", "cycle", "compressive", "tensile"],
+        ]}
+      />
+      <MultipleInputQuestion
+        question={[
+          "The corrosion of drill string in a water based mud is primary due to",
+          ",",
+          "and",
+          "in the wellbore",
+        ]}
+        answer={["Dissolved gases", "dissolved salts", "acids"]}
+      />
+      <Essay
+        question="Explain the part of oxygen in corrosion of drill pipe"
+        points={[
+          ["It is present in all", ""],
+          ["It causes", "and", ""],
+          ["That may lead to", "and", ""],
+          ["Oxygen can be removed from drilling fluids using a", "such as", ""],
+          ["Even", "amount of oxygen can be very damaging"],
+        ]}
+        answer={[
+          ["Drilling fluids"],
+          ["Rusting", "pitting"],
+          ["washouts", "twistoff"],
+          ["scavenger", "sodium sulphate"],
+          ["Small"],
+        ]}
+      />
+      <Essay
+        question="Explain the part of Carbon di oxide in corrosion of drill pipe"
+        points={[
+          ["Can be introduced in the wellbore with the", "or from the", ""],
+          ["It forms", "which", "steel"],
+        ]}
+        answer={[
+          ["Drilling fluids", "Formation"],
+          ["Carbonic acid", "corrodes"],
+        ]}
+      />
+      <Essay
+        question="Explain the part of dissolved salts in corrosion of drill pipe"
+        points={[
+          ["It may come from the", ",", ",", ",", "or"],
+
+          [
+            "It",
+            "rate of",
+            "due to the",
+            "due to the presence of dissolved salts",
+          ],
+        ]}
+        answer={[
+          [
+            "Makeup water",
+            "formation fluid inflow",
+            "drilled formations",
+            "drilling fluid additives",
+          ],
+          ["Increases", "corrosion", "increases conductivity"],
+        ]}
+      />
+      <Essay
+        question="Explain the part of hydrogen sulphide in corrosion of drill pipe"
+        points={[
+          ["It may be present in the", "being", ""],
+          ["It causes", "or", ""],
+          ["", "is absorbed onto the", "of the", "in the presence of", ""],
+          [
+            "If the",
+            "of",
+            "is sufficient",
+            "can be formed",
+            "leading rapidly to a",
+            "",
+          ],
+          [
+            "",
+            "in itself does not cause a failure but will",
+            "of the pipe if it is already under",
+            "or",
+          ],
+          ["Only", "amounts of H2S needed to be present to induce", ""],
+          ["", "can be circulated in the mud to remove the H2S"],
+        ]}
+        answer={[
+          ["Formation", "drilled"],
+          ["Hydrogen embrittlement", "Sulphide stress cracking"],
+          ["Hydrogen", "surface", "steel", "sulphide"],
+          ["local concentration", "hydrogen", "cracks", "brittle failure"],
+          ["Hydrogen embrittlement", "accelerate failure", "stress", "notched"],
+          ["Small", "fatigue"],
+          ["Special Scavengers"],
+        ]}
+      />
+      <Essay
+        question="Explain the part of organic acids in corrosion of drill pipe"
+        points={[["These produce corrosion by", ",", "and", "to increase", ""]]}
+        answer={[
+          [
+            "Lowering the pH",
+            "remove protective films",
+            "provide hydrogen",
+            "hydrogen embrittlement",
+          ],
+        ]}
+      />
+    </>
+  );
+};
+
+export const FinalDrillingEngineering = () => {
+  return (
+    <>
+      <FunctionsOfDrillingFluids />
+      <DrillString />
+      <DrillPipe />
     </>
   );
 };

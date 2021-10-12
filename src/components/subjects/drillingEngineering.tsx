@@ -336,7 +336,7 @@ const DrillPipe = () => {
           ["Extra tension may be exerted due to", "when", "out of hole"],
         ]}
         answer={[
-          ["drillstring", "joint", "tensile load"],
+          ["drill string", "joint", "tensile load"],
           ["overpull", "pulling"],
         ]}
       />
@@ -366,7 +366,7 @@ const DrillPipe = () => {
         ]}
         answer={[
           [
-            "Deviated holes",
+            "Deviated",
             "wall of pipe",
             "compressive",
             "tensile",
@@ -415,7 +415,7 @@ const DrillPipe = () => {
       <Essay
         question="Explain the part of dissolved salts in corrosion of drill pipe"
         points={[
-          ["It may come from the", ",", ",", ",", "or"],
+          ["It may come from the", ",", ",", "or", ""],
 
           [
             "It",
@@ -431,7 +431,7 @@ const DrillPipe = () => {
             "drilled formations",
             "drilling fluid additives",
           ],
-          ["Increases", "corrosion", "increases conductivity"],
+          ["Increases", "corrosion", "increased conductivity"],
         ]}
       />
       <Essay
@@ -444,8 +444,7 @@ const DrillPipe = () => {
             "If the",
             "of",
             "is sufficient",
-            "can be formed",
-            "leading rapidly to a",
+            "can be formed leading rapidly to a",
             "",
           ],
           [
@@ -453,6 +452,7 @@ const DrillPipe = () => {
             "in itself does not cause a failure but will",
             "of the pipe if it is already under",
             "or",
+            ""
           ],
           ["Only", "amounts of H2S needed to be present to induce", ""],
           ["", "can be circulated in the mud to remove the H2S"],

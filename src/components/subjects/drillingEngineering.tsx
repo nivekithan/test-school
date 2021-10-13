@@ -365,13 +365,7 @@ const DrillPipe = () => {
           ["As the string is", "each joint sustains a", "of", "and", "forces"],
         ]}
         answer={[
-          [
-            "Deviated",
-            "wall of pipe",
-            "compressive",
-            "tensile",
-            "bending",
-          ],
+          ["Deviated", "wall of pipe", "compressive", "tensile", "bending"],
           ["rotated", "cycle", "compressive", "tensile"],
         ]}
       />
@@ -427,7 +421,7 @@ const DrillPipe = () => {
         answer={[
           [
             "Makeup water",
-            "formation fluid inflow",
+            "formation fluid",
             "drilled formations",
             "drilling fluid additives",
           ],
@@ -452,7 +446,7 @@ const DrillPipe = () => {
             "in itself does not cause a failure but will",
             "of the pipe if it is already under",
             "or",
-            ""
+            "",
           ],
           ["Only", "amounts of H2S needed to be present to induce", ""],
           ["", "can be circulated in the mud to remove the H2S"],
@@ -473,7 +467,7 @@ const DrillPipe = () => {
         answer={[
           [
             "Lowering the pH",
-            "remove protective films",
+            "Removing protective films",
             "provide hydrogen",
             "hydrogen embrittlement",
           ],

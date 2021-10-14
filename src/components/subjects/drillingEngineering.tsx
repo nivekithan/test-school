@@ -3,6 +3,7 @@ import { Essay } from "../question/essay";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
+import { TrueOrFalse } from "../question/trueOrFalse";
 
 const FunctionsOfDrillingFluids = () => {
   return (
@@ -477,12 +478,112 @@ const DrillPipe = () => {
   );
 };
 
+const DrillingBit = () => {
+  return (
+    <>
+      <Essay
+        question="Discuss about drill bits"
+        points={[
+          [
+            "A drilling bit is the",
+            "or",
+            "tool which is made up on the end of the",
+            "",
+          ],
+          [
+            "The bit drills through the rock by",
+            ",",
+            ",",
+            "or",
+            "the rock at the bottom of hole",
+          ],
+          ["", "is circulated through the", "in the bit to", "the", ""],
+        ]}
+        answer={[
+          ["cutting", "boring", "drill string"],
+          ["scraping", "chipping", "gauging", "grinding"],
+          ["Drilling fluids", "passageways", "remove", "drilled cuttings"],
+        ]}
+      />
+      <MultipleInputQuestion
+        question="Performance of a bit is a function of what parameters"
+        answer={[
+          "Weight on bit",
+          "Mud properties",
+          "Rotation per minute",
+          "Hydraulic efficiency",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are different types drill bits"
+        answer={["Drag bits", "Roller cone bits", "Diamond bits"]}
+      />
+      <TrueOrFalse
+        question="Drag bits were still in common use"
+        answer={false}
+      />
+      <FillInTheBlanks
+        question={["Drag bit consist of", "shaped like", "which", "as a", ""]}
+        answer={["Rigid steel blades", "fish tail", "rotate", "single unit"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "The introduction of",
+          "to the",
+          "and the design of",
+          "greatly improved its",
+          "",
+        ]}
+        answer={[
+          "Hardfacing",
+          "surface of blades",
+          "passageways",
+          "performance",
+        ]}
+      />
+      <FillInTheBlanks
+        question={["To this bit", "RPM and", "WOB are applied"]}
+        answer={["High", "Low"]}
+      />
+      <Essay
+        question="Explain the decline in the use of drag bits"
+        points={[
+          ["The introduction of", "which could drill", "more efficiently"],
+          ["If too much", "was applied, excessive", "led to", "or", ""],
+          ["", "tend to", "hole, therefore some means of", "was required"],
+          [
+            "",
+            "were limited to drilling through",
+            ",",
+            ",",
+            "where there no",
+            "",
+          ],
+        ]}
+        answer={[
+          ["Roller cone bits", "soft formations"],
+          ["Weight on bit", "torque", "bit failure", "drill pipe"],
+          ["Drag bits", "drill crooked hole", "controlling deviation"],
+          [
+            "Drag bits",
+            "uniformly",
+            "soft",
+            "unconsolidated formations",
+            "hard abrasive layers",
+          ],
+        ]}
+      />
+    </>
+  );
+};
+
 export const FinalDrillingEngineering = () => {
   return (
     <>
       <FunctionsOfDrillingFluids />
       <DrillString />
       <DrillPipe />
+      <DrillingBit />
     </>
   );
 };

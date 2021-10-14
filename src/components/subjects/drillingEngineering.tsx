@@ -186,7 +186,7 @@ const FunctionsOfDrillingFluids = () => {
       />
       <OneLineQuestion
         question="How to overcome the pressure differential between bottomhole pressure and the pore pressure"
-        answer="Increase the mudweight"
+        answer="Increasing the mudweight"
       />
       <MultipleInputQuestion
         question="How to overcome the hydration of clay"

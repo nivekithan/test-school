@@ -38,7 +38,7 @@ export const ITPODrilling = () => {
       />
       <OneLineQuestion
         question="What is blowout"
-        answer="Uncontrolled flow of formation fluids"
+        answer="Uncontrolled flow of formation fluids into wellbore"
       />
     </>
   );

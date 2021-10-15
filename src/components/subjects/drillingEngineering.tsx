@@ -3,6 +3,7 @@ import { Essay } from "../question/essay";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
+import { SingleChoiceQuestion } from "../question/singleChoiceQuestion";
 import { TrueOrFalse } from "../question/trueOrFalse";
 
 const FunctionsOfDrillingFluids = () => {
@@ -510,17 +511,39 @@ const DrillingBit = () => {
         answer={[
           "Weight on bit",
           "Mud properties",
-          "Rotation per minute",
+          "Rate of rotation",
           "Hydraulic efficiency",
         ]}
       />
       <MultipleInputQuestion
         question="What are different types drill bits"
-        answer={["Drag bits", "Roller cone bits", "Diamond bits"]}
+        answer={[
+          "Drag bits",
+          "Roller cone bits",
+          "Diamond bits",
+          "Polycrystalline Diamond compact bits",
+          "Tri-cone roller bits",
+        ]}
       />
+
+      <TrueOrFalse
+        question="Roller cone bits are most commonly used bits"
+        answer={true}
+      />
+    </>
+  );
+};
+
+export const DragBits = () => {
+  return (
+    <>
       <TrueOrFalse
         question="Drag bits were still in common use"
         answer={false}
+      />
+      <MultipleInputQuestion
+        question="What are different types of drag bits"
+        answer={["Four blade", "Double Blade", "Triple blade"]}
       />
       <FillInTheBlanks
         question={["Drag bit consist of", "shaped like", "which", "as a", ""]}
@@ -528,7 +551,27 @@ const DrillingBit = () => {
       />
       <FillInTheBlanks
         question={[
-          "The introduction of",
+          "Drag bits has",
+          "and drills by the",
+          "of their",
+          "on the",
+          "",
+        ]}
+        answer={[
+          "no moving parts",
+          "gauging and scraping action",
+          "blades",
+          "encountered formations",
+        ]}
+      />
+      <SingleChoiceQuestion
+        question="Drag bits were once used for what type of formations"
+        choices={["Soft, Sticky formations", "hard formations"]}
+        answer={1}
+      />
+      <FillInTheBlanks
+        question={[
+          "In drag bits the introduction of",
           "to the",
           "and the design of",
           "greatly improved its",
@@ -541,9 +584,37 @@ const DrillingBit = () => {
           "performance",
         ]}
       />
+      <OneLineQuestion
+        question="What material is used for hardfacing the blades"
+        answer="Tungsten Carbide"
+      />
+      <FillInTheBlanks
+        question={[
+          "In drag bits each blade has",
+          "which throws the",
+          "to",
+          "the",
+          "or",
+          "from the",
+          "",
+        ]}
+        answer={[
+          "one nozzles",
+          "water jet",
+          "clean",
+          "sticking mud",
+          "cuttings",
+          "blade surface",
+        ]}
+      />
       <FillInTheBlanks
         question={["To this bit", "RPM and", "WOB are applied"]}
         answer={["High", "Low"]}
+      />
+      <SingleChoiceQuestion
+        question={["Drag bits in recent years has been replaced by", ""]}
+        choices={["Roller cutter bits", "Diamond bits", "PDC bits"]}
+        answer={1}
       />
       <Essay
         question="Explain the decline in the use of drag bits"
@@ -562,8 +633,8 @@ const DrillingBit = () => {
         ]}
         answer={[
           ["Roller cone bits", "soft formations"],
-          ["Weight on bit", "torque", "bit failure", "drill pipe"],
-          ["Drag bits", "drill crooked hole", "controlling deviation"],
+          ["Weight on bit", "torque", "bit failure", "drill pipe failure"],
+          ["Drag bits", "drill crooked", "controlling deviation"],
           [
             "Drag bits",
             "uniformly",
@@ -584,6 +655,7 @@ export const FinalDrillingEngineering = () => {
       <DrillString />
       <DrillPipe />
       <DrillingBit />
+      <DragBits />
     </>
   );
 };

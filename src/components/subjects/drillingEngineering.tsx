@@ -648,6 +648,111 @@ export const DragBits = () => {
   );
 };
 
+const DiamondBits = () => {
+  return (
+    <>
+      <FillInTheBlanks
+        question={[
+          "Their use is justified in many areas where their",
+          "and the consequent",
+          "in",
+          "affords sufficient advantage to offset",
+          "cost",
+        ]}
+        answer={["long life", "reduction", "trip time", "higher bit"]}
+      />
+      <OneLineQuestion
+        question="They are used in what type of formation"
+        answer="Harder formation"
+      />
+      <TrueOrFalse question="Diamond bits have no moving parts" answer={true} />
+      <FillInTheBlanks
+        question={[
+          "They drill by direct",
+          "or",
+          "and",
+          "action against the bottom of hole",
+        ]}
+        answer={["Abrasion", "Chipping", "grinding"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Diamonds are much",
+          "than the",
+          "and can cut the formation",
+          "",
+        ]}
+        answer={["Harder", "Rock formations", "efficiently"]}
+      />
+      <Essay
+        question="Explain about the manufacturing of diamond bit"
+        points={[
+          ["A", "is machined with", ""],
+          ["", "are placed in a", "and covered with", ""],
+          [
+            "With the",
+            "in position, the",
+            "is",
+            "till the",
+            "and then is allowed",
+            "",
+          ],
+          [
+            "In this manner, the",
+            "are held in a",
+            ", which is attached to the",
+            "",
+          ],
+          ["The", "is composed of", "material"],
+          [
+            "The",
+            "must",
+            "at a sufficiently",
+            "temperature so that",
+            "may not be",
+            "in the process",
+          ],
+          [
+            "The",
+            "in",
+            "are necessary in order to prevent the",
+            "and",
+            "in the",
+            "causing the",
+            "",
+          ],
+        ]}
+        answer={[
+          ["Steel bit blank", "threads"],
+          ["Diamonds", "bit mold", "powdered material"],
+          [
+            "Bit blank",
+            "assembly",
+            "heated",
+            "Powdered material fuses",
+            "cool",
+          ],
+          ["Diamonds", "matrix", "steel bit blank"],
+          ["Matrix", "hard tunguston carbide"],
+          ["binder materials", "melt low temperature", "diamonds", "injured"],
+          [
+            "Hard particles",
+            "matrix",
+            "erosion",
+            "wear",
+            "bit",
+            "loss of diamonds",
+          ],
+        ]}
+      />
+    </>
+  );
+};
+
+const RollerCutterBits = () => {
+  return <></>;
+};
+
 export const FinalDrillingEngineering = () => {
   return (
     <>
@@ -656,6 +761,8 @@ export const FinalDrillingEngineering = () => {
       <DrillPipe />
       <DrillingBit />
       <DragBits />
+      <DiamondBits />
+      <RollerCutterBits />
     </>
   );
 };

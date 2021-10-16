@@ -522,7 +522,6 @@ const DrillingBit = () => {
           "Roller cone bits",
           "Diamond bits",
           "Polycrystalline Diamond compact bits",
-          "Tri-cone roller bits",
         ]}
       />
 
@@ -653,7 +652,7 @@ const DiamondBits = () => {
     <>
       <FillInTheBlanks
         question={[
-          "Their use is justified in many areas where their",
+          "Diamond bits use is justified in many areas where their",
           "and the consequent",
           "in",
           "affords sufficient advantage to offset",
@@ -662,13 +661,13 @@ const DiamondBits = () => {
         answer={["long life", "reduction", "trip time", "higher bit"]}
       />
       <OneLineQuestion
-        question="They are used in what type of formation"
+        question="Diamond bits are used in what type of formation"
         answer="Harder formation"
       />
       <TrueOrFalse question="Diamond bits have no moving parts" answer={true} />
       <FillInTheBlanks
         question={[
-          "They drill by direct",
+          "Diamond bits drill by direct",
           "or",
           "and",
           "action against the bottom of hole",
@@ -750,7 +749,307 @@ const DiamondBits = () => {
 };
 
 const RollerCutterBits = () => {
-  return <></>;
+  return (
+    <>
+      <Essay
+        question="Discuss about Rotary Roller bits"
+        points={[
+          ["Rows of the", "are cut on to the", "are generally in", "numbers"],
+          ["The", "are", "made of", ""],
+          ["The ", "rotate", "as the", "rotates"],
+          [
+            "Each",
+            "has separate one",
+            "which flows",
+            "on the",
+            "to",
+            "it after",
+            "and",
+            "all the",
+            "as rapidly as possible",
+          ],
+        ]}
+        answer={[
+          ["teeth", "Rolling cones", "2-3"],
+          ["teeth", "hard surfaced", "Tunguston Carbide"],
+          ["Toothed wheel", "independently", "drill string"],
+          [
+            "Cone bit",
+            "nozzle",
+            "mud stream jet",
+            "cone cutters",
+            "clean",
+            "cutting the formation",
+            "removes",
+            "drilled cuttings",
+          ],
+        ]}
+      />
+      <MultipleInputQuestion
+        question={[
+          "In Roller cutter bits the size of cone is limited by the",
+          "and",
+          "",
+        ]}
+        answer={["Geometry of bit", "Diameter of hole"]}
+      />
+      <MultipleInputQuestion
+        question={[
+          "Roller cutter bits are designed for",
+          ",",
+          "and",
+          "formations",
+        ]}
+        answer={["Soft", "Medium", "Hard"]}
+      />
+      <MultipleInputQuestion
+        question={["Roller cutter bits cuts the formation by", "and", "both"]}
+        answer={["Gauging and scrapping", "Chipping and grinding"]}
+      />
+      <Essay
+        question="What are jet bits"
+        points={[
+          ["They are", "having", ""],
+          ["Each", "directs a", "directly on the", "which rapidly", ""],
+          ["This allows each", "to strike", "rather than", "its", "in", ""],
+          ["They are used in", ""],
+        ]}
+        answer={[
+          ["Roller cutter bits", "fluid nozzles"],
+          [
+            "nozzle",
+            "high velocity fluid jet",
+            "hole bottom",
+            "removes the cuttings",
+          ],
+          [
+            "bit tooth",
+            "new formation",
+            "expend",
+            "energy",
+            "regrinding the cuttings",
+          ],
+          ["Directional drilling"],
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are two types of TCR bit"
+        answer={["Milled tooth", "Insert tooth"]}
+      />
+      <SingleChoiceQuestion
+        question="Milled tooth is used for what formation"
+        choices={["Soft formation", "Hard formation"]}
+        answer={1}
+      />
+      <SingleChoiceQuestion
+        question="Insert tooth is used for what formation"
+        choices={["Soft formation", "Hard formation"]}
+        answer={2}
+      />
+      <FillInTheBlanks
+        question={[
+          "Gauging and scraping action is the drilling mechanism of",
+          "by",
+          "and applying the",
+          "on the formation",
+        ]}
+        answer={[
+          "Soft formation",
+          "pit blade penetration",
+          "movement of inertia force",
+        ]}
+      />
+      <Essay
+        question="Explain chipping and crushing action"
+        points={[
+          [
+            "Chipping and crushing action or",
+            "action is drilling mechanism of",
+            "in which the",
+            "surface of cutters",
+            "the hard formation into",
+            ".",
+          ],
+          [
+            "In such mechanism",
+            "are not able to",
+            "but they can",
+            "and",
+            "the same with their",
+            "",
+          ],
+        ]}
+        answer={[
+          [
+            "Grinding",
+            "hard formation",
+            "harder edged",
+            "grind",
+            "small cuttings",
+          ],
+          [
+            "Bit teeth",
+            "penetrate the formation",
+            "scratch",
+            "grind",
+            "harder cutters",
+          ],
+        ]}
+      />
+      <Essay
+        question="Discuss about the cutting action of PDC"
+        points={[
+          ["The cutting action of PDC bits are", "unlike the other", ""],
+          [
+            "Which enables it to be operated at",
+            "and allows it to",
+            "with",
+            "amount of",
+            "compared to other",
+            "",
+          ],
+        ]}
+        answer={[
+          ["Shearing actions", "bits"],
+          ["Higher ROP", "drill faster", "lesser", "supplied energy", "bits"],
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are design criteria of rolling cutter bits"
+        answer={[
+          "Journal Angle",
+          "Cone offset",
+          "Cutting structures",
+          "Metallurgy",
+          "Strength",
+          "Bit Bearing",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is journal angle"
+        answer="Angle formed between line perpendicular to cone axis or journal axis and the main axis of bit"
+      />
+      <Essay
+        question="Explain the effects of Journal angle on cutting action"
+        points={[
+          [
+            "With the",
+            "in the journal angle the portion of",
+            "into the",
+            "also",
+            "",
+          ],
+          ["This causes an", "in the", "and", "in the", ""],
+        ]}
+        answer={[
+          ["increase", "cone digging", "formation", "increases"],
+          [
+            "increases",
+            "chipping and grinding",
+            "reduction",
+            "scraping and grinding",
+          ],
+        ]}
+      />
+      <OneLineQuestion
+        question="What is cone offset"
+        answer="Horizontal distance between the axis of bit and a vertical plane through the axis of the journal"
+      />
+      <OneLineQuestion
+        question={["Increasing the cone offset increases", "of the TCR bit"]}
+        answer="Gauging and scraping action"
+      />
+      <FillInTheBlanks
+        question={[
+          "The",
+          "angle and",
+          "angles decide the",
+          "of the cone. Both of these are collectively called",
+          "",
+        ]}
+        answer={["Heel cone", "Inner cone", "size", "cone angles"]}
+      />
+      <OneLineQuestion
+        question={["For softer formations we require", "cone angle"]}
+        answer="Greater"
+      />
+      <OneLineQuestion
+        question="What is skew angle"
+        answer="Angle between the line joining the nodal point to the skew point and the line joining the bit center with the skew point"
+      />
+      <FillInTheBlanks
+        question={[
+          "Increasing the skew angle will increase",
+          "and decreases the",
+          "",
+        ]}
+        answer={["Cone offset", "Chipping and grinding action"]}
+      />
+      <MultipleInputQuestion
+        question="What are parameters affects the cutter shape and size"
+        answer={[
+          "Height of the tooth",
+          "Spacing between the tooth",
+          "Included angle of tooth",
+        ]}
+      />
+      <FillInTheBlanks
+        question={["For soft formation drilling maximum", "and minimum", ""]}
+        answer={["Tooth height", "Spacing and included angle"]}
+      />
+      <FillInTheBlanks
+        question={["For hard formation drilling minimum", "and maximum", ""]}
+        answer={["Tooth height", "Spacing and included angle"]}
+      />
+      <MultipleInputQuestion
+        question={[
+          "Roller cutter bits are manufactured from high strength",
+          "or",
+          "",
+        ]}
+        answer={["Ni-Mo Steel alloy", "Tunguston Carbide steel alloy"]}
+      />
+      <MultipleInputQuestion
+        question={[
+          "All Roller cutter bits after manufacturing undergoes for",
+          "and",
+          "",
+        ]}
+        answer={["Body heat treatment", "Carburising treatment"]}
+      />
+      <Essay
+        question="Explain about body heat treatment"
+        points={[
+          ["Body heat treatment carries on the", "and their", ""],
+          ["The major portion of bit is made of", "and", ""],
+          ["In heat treatment, the", "and", "is applied by different methods"],
+          ["The bit is treated for", ""],
+        ]}
+        answer={[
+          ["cones", "bearing"],
+          ["carbon", "iron"],
+          ["heating", "cooling"],
+          ["greater temperature change tolerance"],
+        ]}
+      />
+      <Essay
+        question="Explain about carburising treatment"
+        points={[
+          ["Carburising treatment is also a type of", ""],
+          ["In this an additional", "is", "on the bit for", "and", ""],
+        ]}
+        answer={[
+          ["Heat treatment"],
+          [
+            "layer of Tunguston Carbide alloy",
+            "molded",
+            "greater temperature tolerance",
+            "increasing hardness of bit",
+          ],
+        ]}
+      />
+    </>
+  );
 };
 
 export const FinalDrillingEngineering = () => {

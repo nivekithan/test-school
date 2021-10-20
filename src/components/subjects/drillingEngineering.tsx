@@ -558,7 +558,7 @@ export const DragBits = () => {
         ]}
         answer={[
           "no moving parts",
-          "gauging and scraping action",
+          "scraping and gauging action",
           "blades",
           "encountered formations",
         ]}
@@ -598,7 +598,7 @@ export const DragBits = () => {
           "",
         ]}
         answer={[
-          "one nozzles",
+          "one nozzle",
           "water jet",
           "clean",
           "sticking mud",
@@ -693,7 +693,7 @@ const DiamondBits = () => {
             "in position, the",
             "is",
             "till the",
-            "and then is allowed",
+            "and then is allowed to",
             "",
           ],
           [
@@ -707,7 +707,7 @@ const DiamondBits = () => {
             "The",
             "must",
             "at a sufficiently",
-            "temperature so that",
+            "so that",
             "may not be",
             "in the process",
           ],
@@ -723,17 +723,17 @@ const DiamondBits = () => {
         ]}
         answer={[
           ["Steel bit blank", "threads"],
-          ["Diamonds", "bit mold", "powdered material"],
+          ["Diamonds", "bit mold", "powdered materials"],
           [
             "Bit blank",
             "assembly",
             "heated",
-            "Powdered material fuses",
+            "Powdered materials fuses",
             "cool",
           ],
           ["Diamonds", "matrix", "steel bit blank"],
-          ["Matrix", "hard tunguston carbide"],
-          ["binder materials", "melt low temperature", "diamonds", "injured"],
+          ["Matrix", "hard tungsten carbide"],
+          ["binder materials", "melt", "low temperature", "diamonds", "injured"],
           [
             "Hard particles",
             "matrix",
@@ -756,7 +756,7 @@ const RollerCutterBits = () => {
         points={[
           ["Rows of the", "are cut on to the", "are generally in", "numbers"],
           ["The", "are", "made of", ""],
-          ["The ", "rotate", "as the", "rotates"],
+          ["The", "rotate", "as the", "rotates"],
           [
             "Each",
             "has separate one",

@@ -87,7 +87,7 @@ const FunctionsOfDrillingFluids = () => {
         ]}
         answer={["Pore", "Fracture"]}
       />
-      <FillInTheBlanks
+      <MultipleInputQuestion
         question={[
           "",
           "and",
@@ -733,7 +733,13 @@ const DiamondBits = () => {
           ],
           ["Diamonds", "matrix", "steel bit blank"],
           ["Matrix", "hard tungsten carbide"],
-          ["binder materials", "melt", "low temperature", "diamonds", "injured"],
+          [
+            "binder materials",
+            "melt",
+            "low temperature",
+            "diamonds",
+            "injured",
+          ],
           [
             "Hard particles",
             "matrix",
@@ -771,7 +777,7 @@ const RollerCutterBits = () => {
         ]}
         answer={[
           ["teeth", "Rolling cones", "2-3"],
-          ["teeth", "hard surfaced", "Tunguston Carbide"],
+          ["teeth", "hard surfaced", "Tungsten Carbide"],
           ["Toothed wheel", "independently", "drill string"],
           [
             "Cone bit",
@@ -804,7 +810,7 @@ const RollerCutterBits = () => {
       />
       <MultipleInputQuestion
         question={["Roller cutter bits cuts the formation by", "and", "both"]}
-        answer={["Gauging and scrapping", "Chipping and grinding"]}
+        answer={["scraping and gauging", "Chipping and grinding"]}
       />
       <Essay
         question="What are jet bits"
@@ -856,14 +862,14 @@ const RollerCutterBits = () => {
         answer={[
           "Soft formation",
           "pit blade penetration",
-          "movement of inertia force",
+          "moment of inertia force",
         ]}
       />
       <Essay
-        question="Explain chipping and crushing action"
+        question="Explain chipping and grinding action"
         points={[
           [
-            "Chipping and crushing action or",
+            "Chipping and grinding action or",
             "action is drilling mechanism of",
             "in which the",
             "surface of cutters",
@@ -881,7 +887,7 @@ const RollerCutterBits = () => {
         ]}
         answer={[
           [
-            "Grinding",
+            "Crushing",
             "hard formation",
             "harder edged",
             "grind",
@@ -896,25 +902,7 @@ const RollerCutterBits = () => {
           ],
         ]}
       />
-      <Essay
-        question="Discuss about the cutting action of PDC"
-        points={[
-          ["The cutting action of PDC bits are", "unlike the other", ""],
-          [
-            "Which enables it to be operated at",
-            "and allows it to",
-            "with",
-            "amount of",
-            "compared to other",
-            "",
-          ],
-        ]}
-        answer={[
-          ["Shearing actions", "bits"],
-          ["Higher ROP", "drill faster", "lesser", "supplied energy", "bits"],
-        ]}
-      />
-      <MultipleInputQuestion
+        <MultipleInputQuestion
         question="What are design criteria of rolling cutter bits"
         answer={[
           "Journal Angle",
@@ -947,7 +935,7 @@ const RollerCutterBits = () => {
             "increases",
             "chipping and grinding",
             "reduction",
-            "scraping and grinding",
+            "scraping and gauging",
           ],
         ]}
       />
@@ -1052,6 +1040,32 @@ const RollerCutterBits = () => {
   );
 };
 
+const PDCBits = () => {
+  return (
+    <>
+      <Essay
+        question="Discuss about the cutting action of PDC"
+        points={[
+          ["The cutting action of PDC bits are", "unlike the other", ""],
+          [
+            "Which enables it to be operated at",
+            "and allows it to",
+            "with",
+            "amount of",
+            "compared to other",
+            "",
+          ],
+        ]}
+        answer={[
+          ["Shearing actions", "bits"],
+          ["Higher ROP", "drill faster", "lesser", "supplied energy", "bits"],
+        ]}
+      />
+    
+    </>
+  );
+};
+
 export const FinalDrillingEngineering = () => {
   return (
     <>
@@ -1062,6 +1076,7 @@ export const FinalDrillingEngineering = () => {
       <DragBits />
       <DiamondBits />
       <RollerCutterBits />
+      <PDCBits />
     </>
   );
 };

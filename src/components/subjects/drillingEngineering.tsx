@@ -902,7 +902,7 @@ const RollerCutterBits = () => {
           ],
         ]}
       />
-        <MultipleInputQuestion
+      <MultipleInputQuestion
         question="What are design criteria of rolling cutter bits"
         answer={[
           "Journal Angle",
@@ -1061,7 +1061,48 @@ const PDCBits = () => {
           ["Higher ROP", "drill faster", "lesser", "supplied energy", "bits"],
         ]}
       />
-    
+    </>
+  );
+};
+
+const ComponentsOfBOP = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are components of BOP"
+        answer={[
+          "Annular Preventer",
+          "Blind ram",
+          "Pipe ram preventer",
+          "Drilling Spool",
+          "Kill Line",
+          "Choke Flow Line",
+          "Bell Nipple",
+          "Fill Line",
+          "Drill string equipment",
+          "Kill and choke equipment",
+        ]}
+      />
+      <OneLineQuestion
+        question={["Pipe ram BOP only works for", "size of pipe"]}
+        answer="Specific"
+      />
+      <OneLineQuestion
+        question={["Blind ram BOP works for", "size of pipe"]}
+        answer="all"
+      />
+      <OneLineQuestion
+        question="How Annular Blowout is operated"
+        answer="By introducing hydraulic fluid into the opening and closing chamber"
+      />
+      <OneLineQuestion
+        question="What happens when introducing hydraulic fluid into closing chamber"
+        answer="Causes the pistol to move upwards forcing the steel reinforced packing unit inward to form a seal"
+      />
+      <OneLineQuestion
+        question="What happens when fluid is directed to opening chamber"
+        answer="The piston moves downward allowing the packing unit to return to the open due to the natural resiliency of the rubber"
+      />
     </>
   );
 };
@@ -1077,6 +1118,7 @@ export const FinalDrillingEngineering = () => {
       <DiamondBits />
       <RollerCutterBits />
       <PDCBits />
+      <ComponentsOfBOP />
     </>
   );
 };

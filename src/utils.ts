@@ -32,4 +32,5 @@ const ignoreWords = [
   "into",
   "a",
   "an",
+  "be",
 ].map((s) => ` ${s} `);

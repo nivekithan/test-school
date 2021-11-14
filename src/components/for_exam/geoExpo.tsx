@@ -1,0 +1,63 @@
+import React from "react";
+import { FillInTheBlanks } from "../question/fillInTheBlanks";
+import { MultipleInputQuestion } from "../question/multipleInputQuestion";
+import { OneLineQuestion } from "../question/oneLineQues";
+
+const Lec3 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What does gravity surveying measures"
+        answer={[
+          "Spatial variations in the earth gravitational field caused by the differences in the density of sub surface rocks",
+          "Variation in the acceleration due to the gravity",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is gravity anomalies"
+        answer="Deviations from a perdefined reference level (geoid)"
+      />
+      <MultipleInputQuestion
+        question="What are applications to gravity exploration"
+        answer={["Depth to bedrock", "Mapping salt dome", "Mapping bedrock"]}
+      />
+      <OneLineQuestion
+        question="What are the limitations of gravity exploration"
+        answer="Not usefull for localized scale"
+      />
+      <MultipleInputQuestion
+        question="What are factors affecting gravity value across earth"
+        answer={["Radius of earth", "mass", "Centrifugal force"]}
+      />
+      <MultipleInputQuestion
+        question="What are measurements that used in gravity surveying"
+        answer={["Wordon", "Lacoste romberg"]}
+      />
+      <FillInTheBlanks
+        question="How does gravity surveying works"
+        answer={[
+          "We measure the absolute value of g in various places",
+          "Then we take care of any errors in our measurements",
+          "Then we subtract the absolute value of g with a reference value",
+          "If the result is not 0 then we can assume there is presence of inhomogeneous subsurface structure which could be hydrocarbon",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are errors can happen in gravity surveying"
+        answer={[
+          "Human error",
+          "Measurement error",
+          "Local fluctuation of gravity",
+        ]}
+      />
+    </>
+  );
+};
+
+export const ForExamGeoExpo = () => {
+  return (
+    <>
+      <Lec3 />
+    </>
+  );
+};

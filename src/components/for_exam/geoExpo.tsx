@@ -9,13 +9,13 @@ const Lec3 = () => {
       <MultipleInputQuestion
         question="What does gravity surveying measures"
         answer={[
-          "Spatial variations in the earth gravitational field caused by the differences in the density of sub surface rocks",
+          "Spatial variations in the earth gravitational field caused by the differences in the density of subsurface rocks",
           "Variation in the acceleration due to the gravity",
         ]}
       />
       <OneLineQuestion
         question="What is gravity anomalies"
-        answer="Deviations from a perdefined reference level (geoid)"
+        answer="Deviations from a predefined reference level (geoid)"
       />
       <MultipleInputQuestion
         question="What are applications to gravity exploration"
@@ -23,7 +23,7 @@ const Lec3 = () => {
       />
       <OneLineQuestion
         question="What are the limitations of gravity exploration"
-        answer="Not usefull for localized scale"
+        answer="Not useful for localized scale"
       />
       <MultipleInputQuestion
         question="What are factors affecting gravity value across earth"
@@ -39,7 +39,7 @@ const Lec3 = () => {
           "We measure the absolute value of g in various places",
           "Then we take care of any errors in our measurements",
           "Then we subtract the absolute value of g with a reference value",
-          "If the result is not 0 then we can assume there is presence of inhomogeneous subsurface structure which could be hydrocarbon",
+          "If the result is not 0 then we can assume that there is presence of inhomogeneous subsurface structure which could be hydrocarbon",
         ]}
       />
       <MultipleInputQuestion

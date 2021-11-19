@@ -34,9 +34,9 @@ const Lec4 = () => {
           "Geological plot of the prognosed lithology",
           "Casing design programme and casing seat depths",
           "Basic mud properties for each open hole section before it is cased off",
-          "Restriction that might be enforced in the are",
+          "Restriction that might be enforced in the area",
         ]}
-      />{" "}
+      />
       <MultipleInputQuestion
         question="What will happen if the drilled cuttings are not removed from borehole"
         answer={[

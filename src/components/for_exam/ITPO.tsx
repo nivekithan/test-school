@@ -49,11 +49,11 @@ const Lec3 = () => {
       <JumbleQuestions>
         <OneLineQuestion
           question="What is undiscovered unrecoverable resource"
-          answer="These are not yet discovered and cannot be commercially recovered if discoverd"
+          answer="These are not yet discovered and cannot be commercially recovered if discovered"
         />
         <OneLineQuestion
           question="What is prospective resource"
-          answer="These resource are not yet discoverd and can be commercially recovered if discovered"
+          answer="These resource are not yet discovered and can be commercially recovered if discovered"
         />
         <OneLineQuestion
           question="What is contingent resource"

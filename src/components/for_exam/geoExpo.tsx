@@ -1,4 +1,5 @@
 import React from "react";
+import { Essay } from "../question/essay";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
@@ -54,10 +55,26 @@ const Lec3 = () => {
   );
 };
 
+const Lec4 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is the function for graph of acceleration due to gravity by buried spherical body"
+        answer="g(x) = GMZ/(x^2 + z^2)^(3/2)"
+      />
+      <OneLineQuestion
+        question="What is half width formula"
+        answer="X = .766z"
+      />
+    </>
+  );
+};
+
 export const ForExamGeoExpo = () => {
   return (
     <>
       <Lec3 />
+      <Lec4 />
     </>
   );
 };

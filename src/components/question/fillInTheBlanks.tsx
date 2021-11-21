@@ -60,7 +60,7 @@ export const FillInTheBlanks = ({ question, answer }: FillInTheBlanksProps) => {
     const correctAnswer: string[] = [];
 
     const isAnswerCorrect = answer.every((value, i) => {
-      if (compareTwoStrings(userAnswer[i], value)) {
+      if (compareTwoStrings({ check: userAnswer[i], correct: value })) {
         correctAnswer.push(userAnswer[i]);
 
         return true;

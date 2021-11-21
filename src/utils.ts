@@ -1,23 +1,29 @@
-export const compareTwoStrings = (left: string, right: string) => {
-  let lowerCaseLeft = left.trim().toLocaleLowerCase();
-  let lowerCaseRight = right.trim().toLocaleLowerCase();
+export const compareTwoStrings = ({
+  correct,
+  check,
+}: {
+  correct: string;
+  check: string;
+}) => {
+  let lowerCaseCorrect = correct.trim().toLocaleLowerCase();
+  let lowerCaseCheck = check.trim().toLocaleLowerCase();
 
   ignoreWords.forEach((value) => {
-    lowerCaseLeft = lowerCaseLeft.replaceAll(value, " ");
-    lowerCaseRight = lowerCaseRight.replaceAll(value, " ");
+    lowerCaseCorrect = lowerCaseCorrect.replaceAll(value, " ");
+    lowerCaseCheck = lowerCaseCheck.replaceAll(value, " ");
   });
 
   replaceWords.forEach(([wordToReplace, replaceWithWord]) => {
-    lowerCaseLeft = lowerCaseLeft.replaceAll(wordToReplace, replaceWithWord);
-    lowerCaseRight = lowerCaseRight.replaceAll(wordToReplace, replaceWithWord);
+    lowerCaseCorrect = lowerCaseCorrect.replaceAll(wordToReplace, replaceWithWord);
+    lowerCaseCheck = lowerCaseCheck.replaceAll(wordToReplace, replaceWithWord);
   });
 
-  if (lowerCaseLeft === lowerCaseRight) return true;
+  if (lowerCaseCorrect === lowerCaseCheck) return true;
 
   console.log(
     `
-${lowerCaseLeft}
-${lowerCaseRight}
+ Correct : ${lowerCaseCorrect}
+ Check   : ${lowerCaseCheck}
 `
   );
 

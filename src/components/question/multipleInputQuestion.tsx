@@ -57,7 +57,7 @@ export const MultipleInputQuestion = ({
       const answerIndex = copyOfAnswers.findIndex(
         (actualSingleAnswer) =>
           actualSingleAnswer &&
-          compareTwoStrings(userSingleAnswer, actualSingleAnswer)
+          compareTwoStrings({ check : userSingleAnswer, correct :  actualSingleAnswer})
       );
 
       if (answerIndex >= 0) {

@@ -40,7 +40,7 @@ export const OneLineQuestion = ({
 
   const onFormSubmission = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const isExact = compareTwoStrings(actualAnswer, userAnswer);
+    const isExact = compareTwoStrings({ correct :  actualAnswer, check : userAnswer});
 
     setAnswerState({ isExact });
   };

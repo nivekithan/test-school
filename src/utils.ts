@@ -7,6 +7,11 @@ export const compareTwoStrings = (left: string, right: string) => {
     lowerCaseRight = lowerCaseRight.replaceAll(value, " ");
   });
 
+  replaceWords.forEach(([wordToReplace, replaceWithWord]) => {
+    lowerCaseLeft = lowerCaseLeft.replaceAll(wordToReplace, replaceWithWord);
+    lowerCaseRight = lowerCaseRight.replaceAll(wordToReplace, replaceWithWord);
+  });
+
   if (lowerCaseLeft === lowerCaseRight) return true;
 
   console.log(
@@ -41,3 +46,8 @@ const ignoreWords = [
   "but",
   "and",
 ].map((s) => ` ${s} `);
+
+const replaceWords = [
+  ["values", "value"],
+  ["differences", "difference"],
+];

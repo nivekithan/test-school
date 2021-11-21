@@ -2,6 +2,7 @@ import React from "react";
 import { Essay } from "../question/essay";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
+import { OneLineQuestion } from "../question/oneLineQues";
 
 const Lec3 = () => {
   return (
@@ -38,6 +39,14 @@ const Lec3 = () => {
         ]}
       />
 
+    </>
+  );
+};
+
+const Lec4 = () => {
+  return (
+    <>
+      
       <Essay
         question="Explain Nebular Hypothesis"
         answer={[[]]}

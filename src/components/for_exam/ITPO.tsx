@@ -122,7 +122,7 @@ const Lec4 = () => {
             "liquids",
             "short",
             "long",
-            "remants",
+            "remnants",
             "organism",
             "algae",
             "plankton",

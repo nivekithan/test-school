@@ -61,6 +61,7 @@ const ignoreWords = [
   "can",
   "across",
   "any",
+  "very",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
@@ -72,4 +73,7 @@ const replaceWords = [
   ["deviations", "deviation"],
   ["measurements", "measurement"],
   ["borehole", "wellbore"],
+  ["formations", "formation"],
+  ["installations", "installation"],
+  ["sediments", "sediment"]
 ];

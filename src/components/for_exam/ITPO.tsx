@@ -1,5 +1,6 @@
 import React from "react";
 import { Essay } from "../question/essay";
+import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
 import { TrueOrFalse } from "../question/trueOrFalse";
@@ -231,11 +232,262 @@ const Lec4 = () => {
   );
 };
 
+const Lec13 = () => {
+  return <>{/* <OneLineQuestion /> */}</>;
+};
+
+const Sat1 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is fish"
+        answer="Any material left or dropped in hole"
+      />
+      <OneLineQuestion
+        question="What is fishing"
+        answer="Process of removing fish from the hole"
+      />
+      <MultipleInputQuestion
+        question="What are causes for fishing"
+        answer={["Mechanical failure", "Human error", "Formations Behaviour"]}
+      />
+      <MultipleInputQuestion
+        question="What are tools that is used for fishing"
+        answer={["Overshot", "Jar"]}
+      />
+      <OneLineQuestion
+        question="What we should do if fishing fails"
+        answer="We should cement only section where fish is present and start sidetracking to our target"
+      />
+      <OneLineQuestion
+        question="What is casing"
+        answer="Casing is a permanently installed pipe used to line the well hole for pressure containment and prevent collapse during drilling phase"
+      />
+      <MultipleInputQuestion
+        question="What are functions of casing"
+        answer={[
+          "Maintain borehole stability",
+          "Prevent contamination of water",
+          "Isolate water from producing formations",
+          "Control well pressure",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are types of casing"
+        answer={[
+          "Structural Casing",
+          "Conductor casing",
+          "Surface casing",
+          "Intermediate casing",
+          "Production casing",
+          "Liner casing",
+        ]}
+      />
+
+      <FillInTheBlanks
+        question={[
+          "Structural Casing is the",
+          "of",
+          ",",
+          "pipe installed in wells drilled from",
+          "to",
+          "very",
+          "from subsequent drilling and to resist the",
+          "imposed by the",
+          "and to help support the",
+          "installed on",
+          "casing",
+        ]}
+        answer={[
+          "outer string",
+          "large diameter",
+          "heavy wall",
+          "floating installation",
+          "isolate",
+          "shallow sediments",
+          "bending moments",
+          "marine riser",
+          "wellhead",
+          "conductor",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of structural casing"
+        answer={[
+          "Isolate very shallow sediments from subsequent drilling",
+          "Resist the bending moments imposed by the marine riser",
+          "Support the wellhead installed on conductor casing",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Conductor casing is the",
+          "and",
+          "diameter pipe installed during construction",
+        ]}
+        answer={["First", "largest"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Conductor casing is inserted into the",
+          "and",
+          "in place along its",
+          "to",
+          "",
+        ]}
+        answer={["surface hole", "cemented", "full length", "ground surface"]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of Conductor casing"
+        answer={[
+          "Hold back any unconsolidated surface sediments",
+          "Isolate shallow ground water from the contents of hole",
+          "Provide a circulation for the drilling mud to protect foundation of the platform",
+        ]}
+      />
+      <OneLineQuestion
+        question="Where should be surface casing should be placed"
+        answer="In component rock like limestone"
+      />
+      <OneLineQuestion
+        question="Why surface casing should be placed in component rock"
+        answer="To ensure that formation will not fractured at the casing shoe by high mud weight used later in next hole"
+      />
+      <MultipleInputQuestion
+        question="What are functions of surface casing"
+        answer={[
+          "Prevent caving of week formation encountered at shallow depths",
+          "Enable full mud circulation",
+          "Prevent contamination of fresh water sands by drilling mud",
+          "Provide Protection against hydrocarbons found at shallow depths",
+          "Provide Initial support for blowout preventers",
+          "Provide kick resistance for deeper drilling",
+          "Provide support for wellhead system and all subsequent casing strings",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is production casing"
+        answer="It is final length of steel pipe used in wellbore construction"
+      />
+      <FillInTheBlanks
+        question={[
+          "Production casing typically runs the entire",
+          "of the",
+          "and may be",
+          "in place all the way to",
+          "",
+        ]}
+        answer={["depth", "well", "cemented", "ground surface"]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of production casing"
+        answer={[
+          "Pump hydraulic fracturing fluids into producing formation without contacting other formation along the wellbore",
+          "Isolate production zones",
+          "Provide reservoir control",
+          "Permit selective production in multi zones production",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Liner casing is a string of casing that does",
+          "reach to the",
+          ". It hangs on",
+          ", by use of suitable",
+          "and",
+          "called",
+          "",
+        ]}
+        answer={[
+          "not",
+          "surface",
+          "intermediate casing",
+          "packer",
+          "slips",
+          "liner hanger",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are advantages of liner casing"
+        answer={[
+          "Reduce cost",
+          "Improve hydraulic performance",
+          "Allow use of larger tubing above liner top",
+        ]}
+      />
+
+      <OneLineQuestion
+        question="What is packer"
+        answer="Device used to isolate one zone from another"
+      />
+      <OneLineQuestion
+        question="What is well completion"
+        answer="Preparing well for production operations"
+      />
+      <FillInTheBlanks
+        question="What are steps followed in well completion"
+        answer={["Lowering tubing", "Placing packer", "Perforation"]}
+      />
+
+      <MultipleInputQuestion
+        question="What are different types of Well completion"
+        answer={["Open hole completion", "Cased hole completion"]}
+      />
+      <MultipleInputQuestion
+        question="What are examples of cased hole completion"
+        answer={["Liner completions"]}
+      />
+      <MultipleInputQuestion
+        question="What are different types of Liner completions"
+        answer={["Screen liner completions", "Perforated Liner completion"]}
+      />
+      <OneLineQuestion
+        question="Explain screen liner completion"
+        answer="Casing is set above producing zone and an uncemented screen and liner assembly is installed across pay zone"
+      />
+      <OneLineQuestion
+        question="Explain perforated liner completion"
+        answer="Casing is set above the producing zone and line assembly is installed across the payzone and cemented in place. The line is then perforated selectively for production"
+      />
+      <OneLineQuestion
+        question="What is wellhead"
+        answer="It is a component at the surface of an oil or gas well that provides the structural and pressure containing interface for the drilling and production equipment"
+      />
+
+      <MultipleInputQuestion
+        question="What are functions of wellhead"
+        answer={[
+          "Provide a means of casing suspension",
+          "Provides a means of tubing suspension",
+          "Provides a means of pressure sealing and isolation",
+          "Provides pressure monitoring and pumping access to annuli between different casing",
+          "Provides a means of attaching blowout preventer during drilling",
+          "Provides a means of attaching christmas tree for production operations",
+          "Provides a means of well access",
+          "Provides a means of attaching well pump",
+        ]}
+      />
+
+      <OneLineQuestion
+        question="What is tubing"
+        answer="Tubing is removable pipe installed in the well through which well fluids pass"
+      />
+
+      <OneLineQuestion
+        question="What is christmas tree is used for"
+        answer="To control flow rate of formation fluids"
+      />
+    </>
+  );
+};
+
 export const ForExamITPO = () => {
   return (
     <>
       <Lec3 />
       <Lec4 />
+      <Lec13 />
+      <Sat1 />
     </>
   );
 };

@@ -5,8 +5,8 @@ export const compareTwoStrings = ({
   correct: string;
   check: string;
 }) => {
-  let lowerCaseCorrect = correct.trim().toLocaleLowerCase();
-  let lowerCaseCheck = check.trim().toLocaleLowerCase();
+  let lowerCaseCorrect = ` ${correct.trim().toLocaleLowerCase()} `;
+  let lowerCaseCheck = ` ${check.trim().toLocaleLowerCase()} `;
 
   ignoreWords.forEach((value) => {
     lowerCaseCorrect = lowerCaseCorrect.replaceAll(value, " ");
@@ -14,8 +14,14 @@ export const compareTwoStrings = ({
   });
 
   replaceWords.forEach(([wordToReplace, replaceWithWord]) => {
-    lowerCaseCorrect = lowerCaseCorrect.replaceAll(wordToReplace, replaceWithWord);
-    lowerCaseCheck = lowerCaseCheck.replaceAll(wordToReplace, replaceWithWord);
+    lowerCaseCorrect = lowerCaseCorrect.replaceAll(
+      ` ${wordToReplace} `,
+      ` ${replaceWithWord} `
+    );
+    lowerCaseCheck = lowerCaseCheck.replaceAll(
+      ` ${wordToReplace} `,
+      ` ${replaceWithWord} `
+    );
   });
 
   if (lowerCaseCorrect === lowerCaseCheck) return true;
@@ -51,9 +57,19 @@ const ignoreWords = [
   "which",
   "but",
   "and",
+  "has",
+  "can",
+  "across",
+  "any",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
   ["values", "value"],
   ["differences", "difference"],
+  ["do not", "cannot"],
+  ["surroundings", "surrounding"],
+  ["variations", "variation"],
+  ["deviations", "deviation"],
+  ["measurements", "measurement"],
+  ["borehole", "wellbore"],
 ];

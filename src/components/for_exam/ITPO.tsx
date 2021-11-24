@@ -347,16 +347,16 @@ const Sat1 = () => {
       />
       <OneLineQuestion
         question="Where should be surface casing should be placed"
-        answer="In component rock like limestone"
+        answer="In competent rock like limestone"
       />
       <OneLineQuestion
-        question="Why surface casing should be placed in component rock"
+        question="Why surface casing should be placed in competent rock"
         answer="To ensure that formation will not fractured at the casing shoe by high mud weight used later in next hole"
       />
       <MultipleInputQuestion
         question="What are functions of surface casing"
         answer={[
-          "Prevent caving of week formation encountered at shallow depths",
+          "Prevent caving of weak formation encountered at shallow depths",
           "Enable full mud circulation",
           "Prevent contamination of fresh water sands by drilling mud",
           "Provide Protection against hydrocarbons found at shallow depths",
@@ -447,7 +447,7 @@ const Sat1 = () => {
       />
       <OneLineQuestion
         question="Explain perforated liner completion"
-        answer="Casing is set above the producing zone and line assembly is installed across the payzone and cemented in place. The line is then perforated selectively for production"
+        answer="Casing is set above the producing zone and liner assembly is installed across the pay zone and cemented in place. The liner is then perforated selectively for production"
       />
       <OneLineQuestion
         question="What is wellhead"
@@ -457,7 +457,7 @@ const Sat1 = () => {
       <MultipleInputQuestion
         question="What are functions of wellhead"
         answer={[
-          "Provide a means of casing suspension",
+          "Provides a means of casing suspension",
           "Provides a means of tubing suspension",
           "Provides a means of pressure sealing and isolation",
           "Provides pressure monitoring and pumping access to annuli between different casing",
@@ -470,7 +470,7 @@ const Sat1 = () => {
 
       <OneLineQuestion
         question="What is tubing"
-        answer="Tubing is removable pipe installed in the well through which well fluids pass"
+        answer="Tubing is removable pipe installed in the well through which formation fluids pass"
       />
 
       <OneLineQuestion

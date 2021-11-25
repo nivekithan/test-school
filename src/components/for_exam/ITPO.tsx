@@ -268,7 +268,6 @@ const Sat1 = () => {
         answer={[
           "Maintain borehole stability",
           "Prevent contamination of water",
-          "Isolate water from producing formations",
           "Control well pressure",
         ]}
       />

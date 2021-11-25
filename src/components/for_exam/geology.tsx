@@ -1,5 +1,6 @@
 import React from "react";
 import { Essay } from "../question/essay";
+import { Essay2 } from "../question/Essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
@@ -321,11 +322,181 @@ const Lec4 = () => {
   );
 };
 
+const Lec5 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is exogenic process"
+        answer="Those geological process that happen on exterior of earth"
+      />
+      <OneLineQuestion
+        question="What is endogenic process"
+        answer="Those geological process that happens interior of earth"
+      />
+      <MultipleInputQuestion
+        question="What are examples of endogenic process"
+        answer={[
+          "Intrusion of magma",
+          "Volcanos",
+          "Earthquake",
+          "Reformation and deformation of rock inside the earth",
+          "Ground water participation in chemical reaction",
+        ]}
+      />
+      <Essay
+        question="Explain Exogenic process"
+        points={[
+          [
+            "",
+            ",",
+            "and",
+            "all contribute to",
+            "and",
+            ", processes that break down rock into",
+            "",
+          ],
+          ["These", "are then transported by", ",", "or", "as", ""],
+          [
+            "The process of",
+            "reduces",
+            "to",
+            ", create",
+            ",",
+            "and",
+            "and deposit huge amounts of",
+            "that either become",
+            "again or are",
+            "and",
+            "into",
+            "rock",
+          ],
+        ]}
+        answer={[
+          [
+            "Freezing",
+            "thawing",
+            "running water",
+            "weathering",
+            "erosion",
+            "tiny particles",
+          ],
+          ["particles", "ice", "water", "wind", "sediment"],
+          [
+            "erosion",
+            "mountains",
+            "hills",
+            "canyons",
+            "valleys",
+            "soils",
+            "sediments",
+            "eroded",
+            "preserved",
+            "lithified",
+            "sedimentary",
+          ],
+        ]}
+      />
+
+      <MultipleInputQuestion
+        question="What are examples of Exogenic process"
+        answer={["Weathering", "Erosion", "Deposition", "Mass movements"]}
+      />
+
+      <OneLineQuestion
+        question="What is weathering"
+        answer="It is a process in which pre existing rock break down into small pieces by physical, chemical and biological process"
+      />
+      <OneLineQuestion
+        question="What is erosion"
+        answer="It is a process in which natural agents transport sediments from one place to another"
+      />
+      <Essay2 question="What are types of Endogenic process">
+        <MultipleInputQuestion
+          question="What are types of Endogenic process"
+          answer={["Diastrophism", "sudden movements"]}
+        />
+        <MultipleInputQuestion
+          question="What are types of Diastrophism"
+          answer={["Vertical", "Horizontal"]}
+        />
+        <MultipleInputQuestion
+          question="What are types of Vertical Diastrophism movements"
+          answer={["Upward", "Downward"]}
+        />
+        <MultipleInputQuestion
+          question="What are types of Horizontal Diastrophism movements"
+          answer={["Forces of compression", "Forces of tension"]}
+        />
+        <MultipleInputQuestion
+          question="What area types of Sudden movements"
+          answer={["Volcanos", "Earthquake"]}
+        />
+        <OneLineQuestion
+          question="What is another name for Diastrophism"
+          answer="Slow movements"
+        />
+        <OneLineQuestion
+          question="Give an example for forces of compression"
+          answer="Fold mountains"
+        />
+        <OneLineQuestion
+          question="Give an example for forces of tension"
+          answer="Fault mountains"
+        />
+        <MultipleInputQuestion
+          question="What are other names for Vertical Diastrophism movements"
+          answer={["Epeirogenic", "continental building"]}
+        />
+        <MultipleInputQuestion
+          question="What are other name for Horizontal Diastrophism movements"
+          answer={["Orogenic", "Mountain building"]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is Geological cycle"
+        answer="All the process that happens inside and outside of earth and how they are related to each other"
+      />
+      <MultipleInputQuestion
+        question="What are main cycles in Geological cycle"
+        answer={["Hydrologic cycle", "Tectonic cycle", "Rock cycle"]}
+      />
+      <Essay2 question="Complete the rock cycle">
+        <FillInTheBlanks
+          question={[
+            "Igneous rock ->",
+            "->",
+            "->",
+            "->",
+            "->",
+            "->",
+            "->",
+            "->",
+            "->",
+            "",
+          ]}
+          answer={[
+            "Weathering of rocks at surface",
+            "Erosion and transport",
+            "Deposition of sediment",
+            "Burial and compaction",
+            "Sedimentary rock",
+            "Deformation and metamorphism",
+            "Metamorphic rock",
+            "Melting",
+            "Crystallisation of magma",
+          ]}
+        />{" "}
+      </Essay2>
+    </>
+  );
+};
+
 export const ForExamGeology = () => {
   return (
     <>
       <Lec3 />
       <Lec4 />
+      <Lec5 />
     </>
   );
 };

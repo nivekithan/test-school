@@ -103,4 +103,12 @@ const replaceWords = [
   ["remains", "remain"],
   ["environment", "environments"],
   ["produced", "produce"],
+  ["happens", "happen"],
+  ["rocks", "rock"],
+  ["valleys", "valley"],
+  ["breakdown", "break down"],
+  ["transfer", "transport"],
+  ["forces", "force"],
+  ["metamorphisms", "metamorphism"],
+  ["crystallization", "crystallisation"],
 ];

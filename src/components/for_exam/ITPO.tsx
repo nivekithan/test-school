@@ -480,6 +480,170 @@ const Sat1 = () => {
   );
 };
 
+const Lec14 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are types of blowout preventer"
+        answer={["Annular Blowout preventer", "Ram blowout preventer"]}
+      />
+      <OneLineQuestion
+        question="What is Annular blowout preventer"
+        answer="It can close around the drill string, casing or a non cylindrical object such as kelly"
+      />
+      <MultipleInputQuestion
+        question="What are types of Ram blowout preventer"
+        answer={["Pipe rams", "Blind rams", "Shear rams", "Blind shear rams"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Pipe rams close around a",
+          ", restricting flow in the",
+          "between the",
+          "of the",
+          "and the",
+          ", but do not",
+          "flow within the",
+          "",
+        ]}
+        answer={[
+          "drill pipe",
+          "annulus",
+          "outside",
+          "drill pipe",
+          "wellbore",
+          "obstruct",
+          "drill pipe",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Blind rams do not have",
+          "for",
+          ". It can",
+          "the well when the well does not contain a",
+          "or other",
+          "and ",
+          "it",
+        ]}
+        answer={[
+          "Opening",
+          "tubing",
+          "close",
+          "drill string",
+          "tubing",
+          "seal",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Blind shear rams are intended to",
+          "a",
+          "even when the bore is occupied by a ",
+          ", by",
+          "through the",
+          "as the rams",
+          "the",
+          "",
+        ]}
+        answer={[
+          "seal",
+          "wellbore",
+          "drill string",
+          "cutting",
+          "drill string",
+          "close off",
+          "well",
+        ]}
+      />
+      <FillInTheBlanks
+        question={["Shear rams only", "pipe not", "it"]}
+        answer={["Cut", "seal"]}
+      />
+      <OneLineQuestion
+        question="What is well spacing"
+        answer="Distance between well and the area drained by a well"
+      />
+      <OneLineQuestion
+        question={[
+          "At the initial phase of drilling the pore pressure will be",
+          "",
+        ]}
+        answer="High"
+      />
+
+      <OneLineQuestion
+        question="What happens in primary recovery mechanism"
+        answer="The flow of oil into the wellbore is due to natural energy within the reservoir"
+      />
+      <OneLineQuestion
+        question="What is injection well"
+        answer="A well used to inject water or gas to improve performance of reservoir"
+      />
+      <OneLineQuestion
+        question="What happens in secondary recovery mechanism"
+        answer="We drill injection wells between production wells or convert some existing production wells to injection well to increase the pore pressure to increase production of well"
+      />
+      <OneLineQuestion
+        question="What is another name for tertiary recovery mechanism"
+        answer="Enhanced oil recovery"
+      />
+      <OneLineQuestion
+        question="What happens in tertiary recovery mechanism"
+        answer="Through injection wells we inject chemicals which alter the chemical properties of rocks to increase the production of well"
+      />
+      <OneLineQuestion
+        question="What is Infill drilling"
+        answer="If additional wells are needed to adequately drain a reservoir more wells can be drilled in the space between existing wells this is called infill drilling"
+      />
+      <OneLineQuestion
+        question="What is angle of inclination"
+        answer="Angle between axis of well and vertical axis"
+      />
+      <OneLineQuestion
+        question="If the angle of inclination of well is 0 - 60 then what type of well is this"
+        answer="Directional well"
+      />
+      <OneLineQuestion
+        question="What is directional well"
+        answer="Angle of inclination of well is 0 - 60"
+      />
+      <OneLineQuestion
+        question="If the angle of inclination of well is 60 - 89 then what type of well is this"
+        answer="Highly deviated well"
+      />
+      <OneLineQuestion
+        question="What is highly deviated well"
+        answer="Angle of inclination of well is 60 - 89"
+      />
+      <OneLineQuestion
+        question="If the angle of inclination of well is more than 90 then what type of well is this"
+        answer="Horizontal drilling"
+      />
+      <OneLineQuestion
+        question="What is horizontal well"
+        answer="Angle of inclination of well is more than 90"
+      />
+      <OneLineQuestion
+        question="What is slant well"
+        answer="Well whose angle of inclination from surface is not 0"
+      />
+      <OneLineQuestion
+        question="What is kick off point"
+        answer="Location in a vertical wellbore or inclined section of a slant well where directional drilling operation starts"
+      />
+      <MultipleInputQuestion
+        question="What are types of directional well"
+        answer={["J curve well", "S curve well"]}
+      />
+      <MultipleInputQuestion
+        question="What are types of Horizontal well"
+        answer={["Short radius", "Medium radium", "Long radius"]}
+      />
+    </>
+  );
+};
+
 export const ForExamITPO = () => {
   return (
     <>
@@ -487,6 +651,7 @@ export const ForExamITPO = () => {
       <Lec4 />
       <Lec13 />
       <Sat1 />
+      <Lec14 />
     </>
   );
 };

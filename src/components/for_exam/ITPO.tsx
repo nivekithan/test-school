@@ -450,7 +450,7 @@ const Sat1 = () => {
       />
       <OneLineQuestion
         question="What is wellhead"
-        answer="It is a component at the surface of an oil or gas well that provides the structural and pressure containing interface for the drilling and production equipment"
+        answer="It is a component installed at the surface of an oil or gas well that provides the structural and pressure containing interface for the drilling and production equipment"
       />
 
       <MultipleInputQuestion

@@ -69,7 +69,7 @@ const ignoreWords = [
   "are",
   "and",
   "or",
-  "those"
+  "those",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
@@ -115,4 +115,7 @@ const replaceWords = [
   ["allows", "allow"],
   ["wells", "well"],
   ["movements", "movement"],
+  ["continents", "continent"],
+  ["plates", "plate"],
+  ["currents", "current"],
 ];

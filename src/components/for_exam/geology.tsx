@@ -1,10 +1,11 @@
 import React from "react";
 import { Essay } from "../question/essay";
-import { Essay2 } from "../question/Essay2";
+import { Essay2 } from "../question/essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
 import { SingleChoiceQuestion } from "../question/singleChoiceQuestion";
+import { Topic } from "../question/topic";
 import { TrueOrFalse } from "../question/trueOrFalse";
 import { JumbleQuestions } from "../utils";
 
@@ -491,12 +492,267 @@ const Lec5 = () => {
   );
 };
 
+const Lec8 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is plates"
+        answer="Plastic portion of crust above which solid portion of crust remains"
+      />
+      <OneLineQuestion
+        question="What is continental drift"
+        answer="Horizontal movement of the continents on vast scale"
+      />
+      <MultipleInputQuestion
+        question="What are the major tectonic plates"
+        answer={[
+          "North American plate",
+          "Eurasia plate",
+          "Pacific plate",
+          "South American plate",
+          "Africa plate",
+          "Antarctic plate",
+          "Australia plate",
+        ]}
+      />
+
+      <Essay2 question="Explain breakup of pangaea">
+        <FillInTheBlanks
+          question={[
+            "Before",
+            "years ago. All continents were joined together as",
+            "also known as",
+            "",
+          ]}
+          answer={["130 millions", "supercontinent", "Pangaea"]}
+        />
+        <FillInTheBlanks
+          question={["It was surrounded by", "ocean"]}
+          answer={["Panthalassa"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "As the time passes due to",
+            "motion, continents started to move",
+            ",",
+            "or",
+            "to each other. According to that",
+            "happened",
+          ]}
+          answer={[
+            "Plates",
+            "towards",
+            "away",
+            "parallel",
+            "separation of continent",
+          ]}
+        />
+        <MultipleInputQuestion
+          question={["At first continents separated into two parts", "and", ""]}
+          answer={["Northern", "Southern"]}
+        />
+        <OneLineQuestion
+          question={["Northern part of continent is called", ""]}
+          answer="Laurasia"
+        />
+        <OneLineQuestion
+          question={["Southern part of continent is called", ""]}
+          answer="Gondwana"
+        />
+        <MultipleInputQuestion
+          question="Group of continents in Northern part are"
+          answer={["North America", "Eurasia"]}
+        />
+        <MultipleInputQuestion
+          question="Group of continents in Southern part are"
+          answer={["South America", "Africa", "Australia", "Antarctica"]}
+        />
+        <OneLineQuestion
+          question="The sea which separates Northern part and Southern part is called as"
+          answer="Tethys sea"
+        />
+      </Essay2>
+
+      <MultipleInputQuestion
+        question="Based on current movement of plate how do you classify the plates"
+        answer={["Active plate margin", "Passive Plates margin"]}
+      />
+      <OneLineQuestion
+        question="What is active plat margin"
+        answer="There are movements between two plates  "
+      />
+      <OneLineQuestion
+        question="What is passive plate margin"
+        answer="There are no movements between two plates"
+      />
+
+      <MultipleInputQuestion
+        question="What are different types of plate margin"
+        answer={["Divergent margin", "Convergent margin", "Transform margin"]}
+      />
+
+      <OneLineQuestion
+        question="What is divergent margin"
+        answer="Movement of plates is away from each other"
+      />
+      <OneLineQuestion
+        question="What is transform margin"
+        answer="Movement of plates is parallel to each other"
+      />
+      <OneLineQuestion
+        question="What is convergent margin"
+        answer="Movement of plates is towards each other"
+      />
+      <SingleChoiceQuestion
+        question="What crust is thicker"
+        choices={["Oceanic crust", "Continental Crust"]}
+        answer={1}
+      />
+      <OneLineQuestion
+        question={["Divergent margin is also named as", ""]}
+        answer="Constructive plate margin"
+      />
+      <OneLineQuestion
+        question="What is seafloor spreading"
+        answer="When magma erupts and spreads into seafloor and converts into basaltic crust"
+      />
+      <OneLineQuestion
+        question="What is convectional current"
+        answer="Due to high difference in temperature between upper mantle and lower mantle there will be movements between mantle leading to convection current"
+      />
+      <Essay2 question="What is the reason for seafloor spreading">
+        <FillInTheBlanks
+          question={[
+            "When two",
+            "of",
+            "meet each other, at the",
+            "zone there will be",
+            "",
+          ]}
+          answer={[
+            "Conventional current",
+            "different spinning direction",
+            "mixing",
+            "high temperature",
+          ]}
+        />
+        <FillInTheBlanks
+          question={["As a result the", "causing", ""]}
+          answer={["Magma intrudes vertically", "seafloor spreading"]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is subduction zone"
+        answer="Bending zone when denser plate starts to submerge under lighter plate"
+      />
+      <OneLineQuestion
+        question="Where does trench form"
+        answer="Subduction zone"
+      />
+      <MultipleInputQuestion
+        question="What are characteristic of trench"
+        answer={["High depth"]}
+      />
+      <OneLineQuestion
+        question="When does Destructive collision plate margin happens"
+        answer="When two continental plate move towards each other "
+      />
+      <OneLineQuestion
+        question="When does destructive subduction plate margin happens"
+        answer="When oceanic and continental plate move towards each other"
+      />
+      <OneLineQuestion
+        question="When does conservation plate margin happens"
+        answer="When plates move alongside each other"
+      />
+      <OneLineQuestion
+        question="What is Benioff zone"
+        answer="Part of plate when it breaks and convert into magma"
+      />
+      <MultipleInputQuestion
+        question="What are types of destructive plate boundaries"
+        answer={[
+          "Continental and oceanic",
+          "Oceanic and Oceanic",
+          "Continental and Continental",
+        ]}
+      />
+      <Essay2 question="Explain all Destructive plate boundaries">
+        <Topic topic="Continental and Oceanic">
+          <FillInTheBlanks
+            question={["Denser", "plate", "below the", ""]}
+            answer={["Oceanic", "subducts", "continental"]}
+          />
+          <FillInTheBlanks
+            question={["The plate", "leaves a deep", ""]}
+            answer={["subducting", "trench"]}
+          />
+          <FillInTheBlanks
+            question={[
+              "Built up",
+              "from the",
+              "plate cause",
+              "bursting through the",
+              "",
+            ]}
+            answer={[
+              "Pressure",
+              "Melting",
+              "explosive volcanos",
+              "continental plate",
+            ]}
+          />
+        </Topic>
+        <Topic topic="Oceanic and Oceanic">
+          <FillInTheBlanks
+            question={["", "plate", "leaving an ", ""]}
+            answer={["Heavier", "subducts", "trench"]}
+          />
+          <FillInTheBlanks
+            question={["Built up", "causes", "bursting through", ""]}
+            answer={["pressure", "underwater volcanos", "oceanic plates"]}
+          />
+          <FillInTheBlanks
+            question={["", "cools and creates new land called", ""]}
+            answer={["Lava", "island arcs"]}
+          />
+        </Topic>
+        <Topic topic="Continental and continental">
+          <FillInTheBlanks
+            question={["Both", "are not as", "as", "so lots of", "builds"]}
+            answer={["plates", "dense", "oceanic", "pressure"]}
+          />
+          <FillInTheBlanks
+            question={["There will no", "of", ""]}
+            answer={["subduction", "continental crust"]}
+          />
+          <FillInTheBlanks
+            question={["", "of", "on top of", "due to", "between", ""]}
+            answer={[
+              "Pile up",
+              "continental crust",
+              "lithosphere",
+              "pressure",
+              "plates",
+            ]}
+          />
+          <FillInTheBlanks
+            question={["", "are formed from", "of", ""]}
+            answer={["Fold mountains", "piles", "continental crust"]}
+          />
+        </Topic>
+      </Essay2>
+    </>
+  );
+};
+
 export const ForExamGeology = () => {
   return (
     <>
       <Lec3 />
       <Lec4 />
       <Lec5 />
+      <Lec8 />
     </>
   );
 };

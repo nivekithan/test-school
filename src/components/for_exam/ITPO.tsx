@@ -1,5 +1,6 @@
 import React from "react";
 import { Essay } from "../question/essay";
+import { Essay2 } from "../question/essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
@@ -582,7 +583,7 @@ const Lec14 = () => {
       />
       <OneLineQuestion
         question="What happens in secondary recovery mechanism"
-        answer="We drill injection wells between production wells or convert some existing production wells to injection well to increase the pore pressure to increase production of well"
+        answer="We drill injection wells between production wells or convert some existing production wells to injection well and inject immiscible water or gas to increase the pore pressure to increase production of well"
       />
       <OneLineQuestion
         question="What is another name for tertiary recovery mechanism"
@@ -590,7 +591,7 @@ const Lec14 = () => {
       />
       <OneLineQuestion
         question="What happens in tertiary recovery mechanism"
-        answer="Through injection wells we inject chemicals which alter the chemical properties of rocks to increase the production of well"
+        answer="Through injection wells we inject chemicals which alter properties of rocks or inject miscible gas to increase the production of well"
       />
       <OneLineQuestion
         question="What is Infill drilling"
@@ -618,7 +619,7 @@ const Lec14 = () => {
       />
       <OneLineQuestion
         question="If the angle of inclination of well is more than 90 then what type of well is this"
-        answer="Horizontal drilling"
+        answer="Horizontal well"
       />
       <OneLineQuestion
         question="What is horizontal well"
@@ -638,7 +639,486 @@ const Lec14 = () => {
       />
       <MultipleInputQuestion
         question="What are types of Horizontal well"
-        answer={["Short radius", "Medium radium", "Long radius"]}
+        answer={["Short radius", "Medium radius", "Long radius"]}
+      />
+    </>
+  );
+};
+
+const Lec15 = () => {
+  return (
+    <>
+      <Essay2 question="Write formula for Stock tank oil in place">
+        <FillInTheBlanks
+          question={["S.T.O.I.P = ", "(", "/", ") (", "-", ")"]}
+          answer={["7758", "A h phi", "Boi", "1", "Sw"]}
+        />
+        <OneLineQuestion question={["A =>", ""]} answer="Area" />
+        <OneLineQuestion question={["h =>", ""]} answer="height" />
+        <OneLineQuestion question={["phi =>", ""]} answer="Porosity" />
+        <OneLineQuestion
+          question={["Boi =>"]}
+          answer="Oil formation volume factor"
+        />
+        <OneLineQuestion question={["Sw =>"]} answer="Saturation of water" />
+      </Essay2>
+      <MultipleInputQuestion
+        question="What is formation evaluation used for"
+        answer={[
+          "To establish the presence of potential reservoir rock",
+          "To determine the ability of wellbore to produce petroleum economically",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are methods used in formation evaluation"
+        answer={["Direct method", "Indirect method"]}
+      />
+      <MultipleInputQuestion
+        question="What are direct methods used in formation evaluation"
+        answer={[
+          "Core Analysis",
+          "Fluid Analysis",
+          "Mud logging",
+          "Drill cuttings description",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are indirect methods used in formation evaluation"
+        answer={[
+          "Measurement while drilling",
+          "Logging while drilling",
+          "Wireline logging",
+          "Formation flow test",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is logging"
+        answer="Record of parameters with respect to depth"
+      />
+      <OneLineQuestion
+        question="What is well log"
+        answer="Records of physical, chemical and other petrophysical properties of rock and lithological units in the subsurface"
+      />
+    </>
+  );
+};
+
+const Lec16 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is whole core"
+        answer="Very long representation of the formation"
+      />
+      <OneLineQuestion
+        question="What is core plug"
+        answer="Very small representation of whole core"
+      />
+      <Essay2 question="How does core sample are collected">
+        <FillInTheBlanks
+          question={["", "are obtained by", "the", "with", ""]}
+          answer={["Core samples", "replacing", "drill bit", "coring bit"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The ",
+            "",
+            "into the rock and",
+            "a",
+            "volume of rock through the",
+            "in the bit",
+          ]}
+          answer={["coring bit", "drills", "captures", "cylindrical", "hole"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The rock sample is collected in a",
+            "in the",
+            "portion of the",
+            "",
+          ]}
+          answer={["core barrel", "lower", "bottom hole assembly"]}
+        />
+      </Essay2>
+      <JumbleQuestions>
+        <TrueOrFalse question="Process of coring is expensive" answer={true} />
+        <TrueOrFalse
+          question="Process of coring is inexpensive"
+          answer={false}
+        />
+        <TrueOrFalse
+          question="Process of coring is done few times"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Process of coring is done lot of times"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <MultipleInputQuestion
+        question="What are types of tests can be conducted on core plug"
+        answer={["Routine Core Analysis", "Special Core Analysis"]}
+      />
+      <Essay2 question="Write about Routine Analysis">
+        <OneLineQuestion
+          question="Why do we not examine core for water saturation in Routine Analysis"
+          answer="Properties of core would have changed when it reaches surface therefore water saturation will not be a true value"
+        />
+        <FillInTheBlanks
+          question={[
+            "So the first step would be",
+            "the",
+            "out of",
+            "and",
+            ", leaving only",
+            "in",
+            "",
+          ]}
+          answer={["cleaning", "core", "oil", "gas", "air", "pore spaces"]}
+        />
+        <FillInTheBlanks
+          question={["Then we measure both", "and", ""]}
+          answer={["Porosity", "Absolute Permeability"]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="How do we collect rock for special core Analysis"
+        answer={
+          "In a high pressure and high temperature container where the properties of rock will be preserved"
+        }
+      />
+      <MultipleInputQuestion
+        question="What can we measure from special core Analysis"
+        answer={["Effective Permeability", "Oil Saturation"]}
+      />
+      <MultipleInputQuestion
+        question="What parameters are recorded in mud logging"
+        answer={[
+          "Rate of penetration",
+          "Mud weight",
+          "Total gas collected in chamber",
+          "Composition of gas",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="Why do we do mud logging"
+        answer={[
+          "To find composition of gas",
+          "To find type of formation",
+          "To find trace of hydrocarbon",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What does Measurement while drilling measures"
+        answer={[
+          "Inclination of well",
+          "Weight on bit",
+          "Rate of penetration",
+          "Torque",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What does Logging while drilling measure"
+        answer={["Lithology"]}
+      />
+    </>
+  );
+};
+
+const Lec17 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are three stages of logging"
+        answer={[
+          "Open hole logging",
+          "Cased hole logging",
+          "Production logging",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is reason behind the name of wireline logging"
+        answer="The logging tool is attached and lowered into well by a wireline"
+      />
+      <MultipleInputQuestion
+        question="What properties are measured by well log"
+        answer={[
+          "Natural gamma radiation",
+          "Spontaneous potential",
+          "Speed of sound",
+          "Neutron porosity",
+          "Resistivity",
+          "Nuclear magnetic resonance",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are unknowns in STOIP equation that can be found from wireline logging"
+        answer={["Thickness of payzone", "Porosity", "Saturation of water"]}
+      />
+      <MultipleInputQuestion
+        question="What are types of logs"
+        answer={[
+          "Gamma Ray log",
+          "Sonic log",
+          "Density log",
+          "Caliper log",
+          "Spontaneous Potential log",
+          "Resistivity log",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec18 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are primary drive mechanism"
+        answer={[
+          "Rock and liquid expansion drive",
+          "Depletion drive",
+          "Gas cap drive",
+          "Water drive",
+          "Gravity drainage drive",
+          "Combination drive",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="Primary drive mechanism can provide information about what reservoir performance characteristic"
+        answer={[
+          "Ultimate recovery factor",
+          "Pressure decline rate",
+          "Gas oil ratio",
+          "Water production",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is bubble point pressure"
+        answer="Pressure below which dissolved gas became free gas"
+      />
+      <MultipleInputQuestion
+        question="What are types of reservoir based on bubble point pressure"
+        answer={["Under saturated Reservoir", "Saturated Reservoir"]}
+      />
+      <OneLineQuestion
+        question="What is undersaturated reservoir"
+        answer="Reservoir whose pore pressure is greater than bubble point pressure"
+      />
+      <OneLineQuestion
+        question="What is saturated reservoir"
+        answer="Reservoir whose pore pressure is equal or less than bubble point pressure"
+      />
+      <OneLineQuestion
+        question="What is water drive mechanism"
+        answer="Water moving into the pore spaces originally occupied by oil replacing the oil and displacing it to the producing wells"
+      />
+      <Essay2 question="Write about reservoir characteristic in Water drive mechanism">
+        <OneLineQuestion
+          question="Reservoir Pressure"
+          answer="Declines very slowly"
+        />
+        <OneLineQuestion question="Gas oil ratio" answer="Remains low" />
+        <OneLineQuestion
+          question="Water production"
+          answer="Early excess water production"
+        />
+        <OneLineQuestion question="Oil recovery" answer="35 to 75%" />
+      </Essay2>
+      <OneLineQuestion
+        question="What is conate water"
+        answer="Small amount of water that got stuck in oil or gas zone"
+      />
+      <OneLineQuestion
+        question="What is Rock and liquid expansion"
+        answer="With the decrease in formation pressure there will be expansion of individual rock grains and formation compaction leading to decrease in pore volume causing the oil to push out"
+      />
+      <OneLineQuestion
+        question="What is ultimate oil recovery in Rock and liquid expansion"
+        answer="Less than 5%"
+      />
+      <OneLineQuestion
+        question="What is least efficient driving mechanism"
+        answer="Rock and liquid expansion"
+      />
+      <MultipleInputQuestion
+        question="What are different names for depletion drive mechanism"
+        answer={[
+          "Solution gas drive",
+          "Dissolved gas drive",
+          "Internal gas drive",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is depletion drive mechanism"
+        answer="As pressure drops below bubble point pressure gas bubbles are liberated, these bubbles expand and force the oil out of the pore spaces"
+      />
+      <OneLineQuestion
+        question="What is ultimate oil recovery in depletion drive mechanism"
+        answer="Less than 5% to 30%"
+      />
+      <OneLineQuestion
+        question="What is gas cap drive"
+        answer="With the decrease in formation pressure the gas zone pushes oil zone into producing wells"
+      />
+      <OneLineQuestion
+        question="What is expected oil recovery in gas cap drive"
+        answer="20 to 40%"
+      />
+      <OneLineQuestion
+        question="What is gravity drainage drive"
+        answer="Due to the difference between densities in reservoir fluids the oil is displaced toward producing wells"
+      />
+      <OneLineQuestion
+        question="What is oil recovery in Gravity drainage method"
+        answer="5 to 30%"
+      />
+      <OneLineQuestion
+        question="What is combination drive mechanism"
+        answer="Combination of one or more drive mechanism"
+      />
+      <OneLineQuestion
+        question="What is material balance equation"
+        answer="Tool used by reservoir engineer for interpreting and predicting reservoir performance"
+      />
+      <MultipleInputQuestion
+        question="What is the use of material balance equation"
+        answer={[
+          "Predict initial hydrocarbon",
+          "Predict future reservoir performance",
+          "Predict ultimate hydrocarbon recovery ",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec19 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is artificial lift"
+        answer="Artificially lifting oil from the bottom of wellbore to surface"
+      />
+      <MultipleInputQuestion
+        question="What are methods of artificial lift"
+        answer={["Sucker rod pump", "Gas lift"]}
+      />
+      <OneLineQuestion
+        question="What is secondary recovery mechanism"
+        answer="We drill injection wells between production wells or convert some existing production wells to injection well and inject immiscible water or gas to increase the pore pressure to increase production of well"
+      />
+      <MultipleInputQuestion
+        question="What is purpose of secondary recovery mechanism"
+        answer={[
+          "To maintain reservoir pressure",
+          "To displace hydrocarbons toward the producing wells",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "In secondary drive mechanism we inject water on",
+          "and gas on",
+          "",
+        ]}
+        answer={["Production zone", "gas cap"]}
+      />
+      <MultipleInputQuestion
+        question="What are methods of secondary recovery mechansism"
+        answer={["Gas injection", "Water flooding"]}
+      />
+      <FillInTheBlanks
+        question="When does secondary recovery mechanism reaches its limit"
+        answer={[
+          "Injected fluid is produced in huge amounts from the production wells",
+          "Production is not economical",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "The successive use of primary recovery and secondary recovery in an oil reservoir produces about",
+          "to",
+          "of the original oil in place",
+        ]}
+        answer={["15%", "40%"]}
+      />
+
+      <OneLineQuestion
+        question="What is Improved Oil Recovery (IOR)"
+        answer="Any methods used to increase the production of oil after primary recovery"
+      />
+      <MultipleInputQuestion
+        question="What methods are included in IOR"
+        answer={[
+          "Secondary recovery mechanism",
+          "Tertiary recovery mechanism",
+          "Infill drilling",
+        ]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Enhanced oil recovery functions by altering",
+          "of the oil itself to make it easier to",
+          "",
+        ]}
+        answer={["Chemical composition", "extract"]}
+      />
+      <MultipleInputQuestion
+        question="What are different methods of tertiary recovery"
+        answer={["Thermal recovery", "Gas injection", "Chemical injection"]}
+      />
+      <OneLineQuestion
+        question="What is thermal recovery"
+        answer="Introduces heat through injection of steam to lower the viscosity"
+      />
+      <MultipleInputQuestion
+        question="How does gas injection works"
+        answer={[
+          "Injected gas expands to push oil to a producing well",
+          "Injected gas dissolve in the oil to lower viscosity and improve flow rate",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are the gases used in gas injection"
+        answer={["Natural gas", "Nitrogen", "Carbon dioxide"]}
+      />
+      <MultipleInputQuestion
+        question="How does chemical injection works"
+        answer={[
+          "Uses long chained molecules called polymers to increase the effectiveness of water flooding",
+          "Uses detergent like surfactants to lower the surface tension that prevents oil droplets from moving",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec20 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is well stimulation"
+        answer="Process of solving a problem in formation to improve performance"
+      />
+      <MultipleInputQuestion
+        question="What are methods of well stimulation "
+        answer={["Hydraulic fracturing", "Acid Fracturing"]}
+      />
+      <OneLineQuestion
+        question="In what type of rock hydraulic fracturing is effective"
+        answer="Sandstone"
+      />
+      <OneLineQuestion
+        question="In what type of rock acid fracturing is effective"
+        answer="Carbonate"
+      />
+      <OneLineQuestion
+        question="What is skin"
+        answer="Measures degree of damage to formation near to wellbore"
+      />
+      <OneLineQuestion
+        question="What is overbalance"
+        answer="Difference of pressure between drilling mud and formation"
       />
     </>
   );
@@ -652,6 +1132,11 @@ export const ForExamITPO = () => {
       <Lec13 />
       <Sat1 />
       <Lec14 />
+      <Lec15 />
+      <Lec16 />
+      <Lec17 />
+      <Lec18 />
+      <Lec19 />
     </>
   );
 };

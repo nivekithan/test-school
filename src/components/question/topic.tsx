@@ -8,8 +8,10 @@ export type TopicProps = {
 export const Topic = ({ topic, children }: TopicProps) => {
   return (
     <>
-      <h2 className="font-semibold text-md">{topic}</h2>
-      {children}
+      <div className="flex flex-col gap-y-5">
+        <h2 className="font-semibold text-lg">{topic}</h2>
+        {children}
+      </div>
     </>
   );
 };

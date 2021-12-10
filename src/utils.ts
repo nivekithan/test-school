@@ -70,7 +70,10 @@ const ignoreWords = [
   "and",
   "or",
   "those",
-  "then"
+  "then",
+  "will",
+  "should",
+  "through",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
@@ -81,7 +84,7 @@ const replaceWords = [
   ["variations", "variation"],
   ["deviations", "deviation"],
   ["measurements", "measurement"],
-  ["borehole", "wellbore"],
+  ["borehole", "well"],
   ["formations", "formation"],
   ["installations", "installation"],
   ["sediments", "sediment"],
@@ -121,4 +124,20 @@ const replaceWords = [
   ["currents", "current"],
   ["closes", "close"],
   ["required", "added"],
+  ["larger", "large"],
+  ["rams", "ram"],
+  ["cuts", "cut"],
+  ["methods", "method"],
+  ["cuttings", "cutting"],
+  ["descriptions", "description"],
+  ["rocks", "rock"],
+  ["records", "record"],
+  ["reached", "reach"],
+  ["reaches", "reach"],
+  ["wellbore", "well"],
+  ["moves", "move"],
+  ["moving", "move"],
+  ["pushes", "push"],
+  ["towards", "toward"],
+  ["dissolves", "dissolve"],
 ];

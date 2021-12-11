@@ -1101,7 +1101,7 @@ const Lec20 = () => {
         answer="Process of solving a problem in formation to improve performance"
       />
       <MultipleInputQuestion
-        question="What are methods of well stimulation "
+        question="What are examples of well stimulation "
         answer={["Hydraulic fracturing", "Acid Fracturing"]}
       />
       <OneLineQuestion
@@ -1113,12 +1113,48 @@ const Lec20 = () => {
         answer="Carbonate"
       />
       <OneLineQuestion
-        question="What is skin"
-        answer="Measures degree of damage to formation near to wellbore"
-      />
-      <OneLineQuestion
         question="What is overbalance"
         answer="Difference of pressure between drilling mud and formation"
+      />
+      <OneLineQuestion
+        question="What is skin factor"
+        answer="Dimensionless pressure drop caused by a flow restriction in formation near to wellbore"
+      />
+      <OneLineQuestion
+        question="What does skin factor measures"
+        answer="Measures degree of damage to formation near to wellbore"
+      />
+      <MultipleInputQuestion
+        question="What are the causes for damage near formation"
+        answer={[
+          "Clay particle swelling",
+          "Change in formation water saturation",
+          "Wettability reversal",
+          "Emulsion blockage",
+          "Precipitation of soluble salts",
+        ]}
+      />
+
+      <OneLineQuestion
+        question="The formula used to calculate Skin factor is s = ( ( k / k_d) - 1 )( ln ( r_d / r_w ) )"
+        answer=""
+      />
+      <OneLineQuestion
+        question="What does it mean if the value of skin is greater than 1"
+        answer="Permeability near the wellbore is reduced and condition of well is damaged"
+      />
+
+      <OneLineQuestion
+        question="What does it mean if the value of skin is less than 1"
+        answer="Permeability near the wellbore is high and condition of well is improved"
+      />
+      <MultipleInputQuestion
+        question="When does skin become less than 1"
+        answer={["Hydraulic fracturing", "Acid fracturing"]}
+      />
+      <OneLineQuestion
+        question="What does it mean if the value of skin is 0"
+        answer="There is no damage near to wellbore"
       />
     </>
   );
@@ -1137,6 +1173,7 @@ export const ForExamITPO = () => {
       <Lec17 />
       <Lec18 />
       <Lec19 />
+      <Lec20 />
     </>
   );
 };

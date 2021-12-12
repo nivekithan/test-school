@@ -19,9 +19,9 @@ export const Essay2 = ({ children, question }: Essay2Props) => {
       })()}
       <ol className="flex flex-col gap-y-5 ml-6 list-decimal list-outside">
         {(() => {
-          if (!Array.isArray(children)) {
-            return <li>{children}</li>;
-          }
+          // if (!Array.isArray(children)) {
+          //   return <li>{children}</li>;
+          // }
 
           return children.map((node, i) => {
             return <li key={i}>{node}</li>;

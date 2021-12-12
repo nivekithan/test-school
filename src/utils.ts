@@ -76,7 +76,7 @@ const ignoreWords = [
   "through",
   "we",
   "toward",
-  "towards"
+  "towards",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
@@ -149,5 +149,10 @@ const replaceWords = [
   ["engineers", "engineer"],
   ["fluids", "fluid"],
   ["changes", "change"],
-  ["used", "use"]
+  ["used", "use"],
+  ["gap", "gaps"],
+  ["intrudes", "intrude"],
+  ["converts", "convert"],
+  ["submerges", "submerge"],
+  ["arc", "arcs"]
 ];

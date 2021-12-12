@@ -12,7 +12,7 @@ import { JumbleQuestions } from "../utils";
 const Lec3 = () => {
   return (
     <>
-      <MultipleInputQuestion
+      {/* <MultipleInputQuestion
         question="What are different hypothesis which explains Origin of earth"
         answer={[
           "Nebular Hypothesis",
@@ -43,7 +43,7 @@ const Lec3 = () => {
           "Mercury, Venus, earth and mars are now mainly rock and they are called terrestrial planet",
           "Jupiter, Saturn, Uranus and neptune are called Jovian planets and are composed primarily of liquids and gases with small and metallic cores",
         ]}
-      />
+      /> */}
     </>
   );
 };
@@ -506,12 +506,12 @@ const Lec8 = () => {
       <MultipleInputQuestion
         question="What are the major tectonic plates"
         answer={[
-          "North American plate",
+          "North America plate",
           "Eurasia plate",
           "Pacific plate",
-          "South American plate",
+          "South America plate",
           "Africa plate",
-          "Antarctic plate",
+          "Antarctica plate",
           "Australia plate",
         ]}
       />
@@ -574,7 +574,7 @@ const Lec8 = () => {
       </Essay2>
 
       <MultipleInputQuestion
-        question="Based on current movement of plate how do you classify the plates"
+        question="Based on current movement of plate how do you classify the plate margin"
         answer={["Active plate margin", "Passive Plates margin"]}
       />
       <OneLineQuestion
@@ -610,11 +610,11 @@ const Lec8 = () => {
       />
       <OneLineQuestion
         question={["Divergent margin is also named as", ""]}
-        answer="Constructive plate margin"
+        answer="Constructive margin"
       />
       <OneLineQuestion
         question="What is seafloor spreading"
-        answer="When magma erupts and spreads into seafloor and converts into basaltic crust"
+        answer="Magma erupts and spreads into seafloor and converts into basaltic crust"
       />
       <OneLineQuestion
         question="What is convectional current"
@@ -630,7 +630,7 @@ const Lec8 = () => {
             "",
           ]}
           answer={[
-            "Conventional current",
+            "Convectional current",
             "different spinning direction",
             "mixing",
             "high temperature",
@@ -658,12 +658,12 @@ const Lec8 = () => {
         answer="When two continental plate move towards each other "
       />
       <OneLineQuestion
-        question="When does destructive subduction plate margin happens"
+        question="When does Destructive subduction plate margin happens"
         answer="When oceanic and continental plate move towards each other"
       />
       <OneLineQuestion
         question="When does conservation plate margin happens"
-        answer="When plates move alongside each other"
+        answer="When two plates move parallel each other"
       />
       <OneLineQuestion
         question="What is Benioff zone"
@@ -724,13 +724,13 @@ const Lec8 = () => {
           />
           <FillInTheBlanks
             question={["There will no", "of", ""]}
-            answer={["subduction", "continental crust"]}
+            answer={["subduction", "continental plate"]}
           />
           <FillInTheBlanks
             question={["", "of", "on top of", "due to", "between", ""]}
             answer={[
               "Pile up",
-              "continental crust",
+              "continental plate",
               "lithosphere",
               "pressure",
               "plates",
@@ -738,7 +738,7 @@ const Lec8 = () => {
           />
           <FillInTheBlanks
             question={["", "are formed from", "of", ""]}
-            answer={["Fold mountains", "piles", "continental crust"]}
+            answer={["Fold mountains", "piles", "continental plate"]}
           />
         </Topic>
       </Essay2>

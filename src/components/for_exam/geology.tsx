@@ -573,6 +573,10 @@ const Lec8 = () => {
         />
       </Essay2>
 
+      <OneLineQuestion
+        question="What is plate margin"
+        answer="Boundary of one of the plates that forms upper layer and together cover the surface of earth  "
+      />
       <MultipleInputQuestion
         question="Based on current movement of plate how do you classify the plate margin"
         answer={["Active plate margin", "Passive Plates margin"]}
@@ -702,6 +706,10 @@ const Lec8 = () => {
               "continental plate",
             ]}
           />
+          <OneLineQuestion
+            question="Given an example for volcanos formed because of Continental and Oceanic collision"
+            answer="The Andes"
+          />
         </Topic>
         <Topic topic="Oceanic and Oceanic">
           <FillInTheBlanks
@@ -716,10 +724,14 @@ const Lec8 = () => {
             question={["", "cools and creates new land called", ""]}
             answer={["Lava", "island arcs"]}
           />
+          <OneLineQuestion
+            question="Give an example for trench formed beacause of Oceanic and Oceanic collision"
+            answer="Marina Trench"
+          />
         </Topic>
         <Topic topic="Continental and continental">
           <FillInTheBlanks
-            question={["Both", "are not as","as", "so lots of", "builds"]}
+            question={["Both", "are not as", "as", "so lots of", "builds"]}
             answer={["plates", "dense", "oceanic", "pressure"]}
           />
           <FillInTheBlanks
@@ -746,6 +758,453 @@ const Lec8 = () => {
   );
 };
 
+const Lec9 = () => {
+  return (
+    <>
+      <JumbleQuestions>
+        <OneLineQuestion
+          question="What is sill"
+          answer="Horizontal magma intrusion"
+        />
+        <OneLineQuestion
+          question="What is another name for horizontal magma intrusion"
+          answer="Sill"
+        />
+        <OneLineQuestion
+          question="What is dyke"
+          answer="Vertical magma intrusion"
+        />
+        <OneLineQuestion
+          question="What is another name for vertical magma intrusion"
+          answer="Dyke"
+        />
+      </JumbleQuestions>
+      <MultipleInputQuestion
+        question={[
+          "In Constructive plate margin new crust is formed in form",
+          "and",
+          "",
+        ]}
+        answer={["Shield Volcano", "Fissure Volcano"]}
+      />
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Movement of plate in constructive plate margin can cause earthquake"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Movement of plate in constructive plate margin cannout cause earthquake"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <MultipleInputQuestion
+        question="What landform are formed in Constructive plate margin"
+        answer={["Ridge", "Rift valley"]}
+      />
+      <OneLineQuestion
+        question="How ridge is formed"
+        answer="Space created in divergent margin is filled by magma"
+      />
+      <OneLineQuestion
+        question="How rift valley is formed"
+        answer="Space created in divergent margin is not filled by magma"
+      />
+      <OneLineQuestion
+        question="What is triple junction"
+        answer="Meeting of three ridge"
+      />
+      <OneLineQuestion
+        question="Given an example for mid ocean ridge"
+        answer="Mid Atlantic ridge"
+      />
+      <Essay2 question="Write about Conservative plate margin">
+        <FillInTheBlanks
+          question={["As the", "move", "occurs and they become", ""]}
+          answer={["plates", "friction", "stuck"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The",
+            "are still trying to",
+            "so",
+            "and",
+            "build up in the",
+            "",
+          ]}
+          answer={["Plates", "move", "pressure", "stresses", "crust"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "When the",
+            "released suddenly",
+            "move through the",
+            ", causing an",
+            "",
+          ]}
+          answer={["pressure", "waves of energy", "crust", "earthquake"]}
+        />
+        <OneLineQuestion
+          question={[
+            "The earthquakes at a conservative plate margin can be very",
+            "",
+          ]}
+          answer="Destructive"
+        />
+        <OneLineQuestion
+          question="Why earthquake at a conservative plate margin can be very destructive"
+          answer="Focus is close to earth surface"
+        />
+        <JumbleQuestions>
+          <TrueOrFalse
+            question="There are volcanos in conservative plate margin"
+            answer={false}
+          />
+          <TrueOrFalse
+            question="There are no volcanos in conservative plate margin"
+            answer={true}
+          />
+        </JumbleQuestions>
+      </Essay2>
+      <OneLineQuestion
+        question="What is collision zone"
+        answer="Two continental plate move towards each other and collide"
+      />
+      <OneLineQuestion
+        question="What happens to land between plate in collision zone"
+        answer="Forced upwards to form fold mountains"
+      />
+      <MultipleInputQuestion
+        question="What are examples of fold mountains"
+        answer={["Alps", "Himalayas"]}
+      />
+      <OneLineQuestion
+        question="What is tectonic"
+        answer="Deformation of crust because of plate interaction"
+      />
+    </>
+  );
+};
+
+const Lec10 = () => {
+  return (
+    <>
+      <Essay2 question="Explain in detail about what happens when magma intrudes in Divergent margin">
+        <FillInTheBlanks
+          question={["When the magma", ", due to", "it", "and forms", ""]}
+          answer={["intrudes", "low temperature", "cools", "igneous rocks"]}
+        />
+        <FillInTheBlanks
+          question={["If the", "is too", ", magma erupts into", ""]}
+          answer={["pressure", "high", "surface"]}
+        />
+        <FillInTheBlanks
+          question={["Magma then", "and forms", "at the surface"]}
+          answer={["cools", "igneous rock"]}
+        />
+      </Essay2>
+      <JumbleQuestions>
+        <OneLineQuestion
+          question="What is intrusive rock"
+          answer="Solidification happened inside the earth"
+        />
+        <OneLineQuestion
+          question="What is extrusive rock"
+          answer="Solidification happened on surface of earth"
+        />
+      </JumbleQuestions>
+
+      <Essay2 question="Explain how divergent plate boundaries works">
+        <FillInTheBlanks
+          question={["Divergent plate boundaries occurs above", ""]}
+          answer={["Rising convection current"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The",
+            "",
+            "up on the",
+            "of the",
+            ",",
+            "it and flowing",
+            "it",
+          ]}
+          answer={[
+            "Rising current",
+            "pushes",
+            "bottom",
+            "lithosphere",
+            "lifting",
+            "laterally beneath",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "This",
+            "flow causes the",
+            "materail above to be",
+            "along in the",
+            "",
+          ]}
+          answer={["lateral", "plate", "dragged", "direction of flow"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "At the",
+            "of the",
+            "the overlying",
+            "is stretched",
+            ",",
+            "and",
+            "",
+          ]}
+          answer={["crest", "uplift", "plate", "thin", "breaks", "pulls apart"]}
+        />
+      </Essay2>
+      <Essay2 question="How mid ocean ridges are formed">
+        <FillInTheBlanks
+          question={[
+            "When a",
+            "boundary occurs beneath",
+            "lithosphere the ",
+            "below",
+            "the lithosphere producing a",
+            "",
+          ]}
+          answer={[
+            "Divergent",
+            "oceanic",
+            "rising convection current",
+            "lifts",
+            "mid ocean ridge",
+          ]}
+        />
+        <FillInTheBlanks
+          question={["", "stretch the", "and produce a", ""]}
+          answer={["Extensional force", "lithosphere", "deep fissure"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "When the",
+            "opens, ",
+            "is reduced on the",
+            "material below it",
+          ]}
+          answer={["Fissure", "pressure", "super heated magma"]}
+        />
+        <FillInTheBlanks
+          question={["", "flows into the", ""]}
+          answer={["New magma", "fissure"]}
+        />
+        <FillInTheBlanks
+          question={["", "then", "and the process", "itself"]}
+          answer={["Magma", "solidifies", "repeats"]}
+        />
+      </Essay2>
+      <Essay2 question="Explain how Rift valley is created">
+        <FillInTheBlanks
+          question={[
+            "When a",
+            "boundary occurs beneath a",
+            "plate the",
+            "is not enough to create a",
+            ",",
+            "through the",
+            "material",
+          ]}
+          answer={[
+            "Divergent",
+            "thick continental",
+            "pull apart",
+            "clean",
+            "single break",
+            "thick continental",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The",
+            "plate is",
+            "from the",
+            "lift, pulled",
+            "by",
+            "and",
+            "into a",
+            "shaped structure",
+          ]}
+          answer={[
+            "thick continental",
+            "arched upwards",
+            "rising convection current",
+            "thin",
+            "extensional force",
+            "fractured",
+            "rift",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "As the two",
+            "pull apart, ",
+            "develop on both sides of",
+            "and the",
+            "block slide",
+            "",
+          ]}
+          answer={["Plate", "normal fault", "plate", "central", "downwards"]}
+        />
+      </Essay2>
+      <SingleChoiceQuestion
+        question={[
+          "In sea floor spreading younger rocks will found",
+          "to the spreading zone",
+        ]}
+        choices={["Near", "Far"]}
+        answer={1}
+      />
+      <SingleChoiceQuestion
+        question={[
+          "In sea floor spreading older rocks will found",
+          "to the spreading zone",
+        ]}
+        choices={["Near", "Far"]}
+        answer={2}
+      />
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Volcanic eruptions are common all along the mid ocean ridge"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Volcanic eruptions are rare all along the mid ocean ridge"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <OneLineQuestion
+        question={["Age of rock", "as one moves away from crest"]}
+        answer="increases"
+      />
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Rocks equidistant on either side of crest of mid ocean ridge show similarities"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Rocks equidistant on either side of crest of mid ocean ridge does not show similarities"
+          answer={false}
+        />
+      </JumbleQuestions>
+    </>
+  );
+};
+
+const Lec12 = () => {
+  return (
+    <>
+      <OneLineQuestion question="What is Accresinary prism" answer="" />
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Oldest oceanic plates are coldest and denser"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Oldest oceanic plates are hottest and lighter"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Magma can penetrate the crust in continental continental collision boundary"
+          answer={false}
+        />
+        <TrueOrFalse
+          question="Magma cannot penetrate the crust in continental continental collision boundary"
+          answer={true}
+        />
+      </JumbleQuestions>
+      <FillInTheBlanks
+        question={[
+          "In contintental contintental collision boundary the magma cools",
+          "and forms",
+          "",
+        ]}
+        answer={["Intrusively", "Granite"]}
+      />
+      <MultipleInputQuestion
+        question="What type rocks are common in continental and continental collision boundary"
+        answer={["Granite", "Geniss"]}
+      />
+      <MultipleInputQuestion
+        question="What type of basins are formed in Subducting convergent plate margin"
+        answer={["Backarc basin", "Forearc basin"]}
+      />
+      <OneLineQuestion
+        question="What is forearc basin"
+        answer="Basin in front of volcanic front"
+      />
+      <OneLineQuestion
+        question="What is backarc basin"
+        answer="Basin in back of volcanic front"
+      />
+    </>
+  );
+};
+
+const Lec13 = () => {
+  return (
+    <>
+      <FillInTheBlanks
+        question={["Slabs normally subduct at", "per year"]}
+        answer={["few centimeters"]}
+      />
+      <MultipleInputQuestion
+        question="Himalayas has formed because of collision of two continental plate they are"
+        answer={["India Plate", "Eurasia plate"]}
+      />
+      <OneLineQuestion
+        question="What is the source for Sediment supply for basins in Convergent margin"
+        answer="Volcanic arc"
+      />
+      <OneLineQuestion
+        question="Why does subsidence occurs"
+        answer="Continuous deposition of sediments in basin leading to deepening and widening of basin"
+      />
+      <JumbleQuestions>
+        <OneLineQuestion
+          question="Foreland basin forms on what type of convergent margin collision"
+          answer="Continental and continental collision"
+        />
+        <OneLineQuestion
+          question="What is foreland basin"
+          answer="Structural basin that develops adjacent and parallel to mountain belt"
+        />
+        <OneLineQuestion
+          question="Why does foreland basin form"
+          answer="Immense mass created by crustal thickening associated with the evolution of a mountain belt causes the lithosphere to bend by a process known as lithospheric flexure"
+        />
+      </JumbleQuestions>
+    </>
+  );
+};
+
+const Lec14 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are basins formed in transform plate margin"
+        answer={["Pull Apart basin"]}
+      />
+      <OneLineQuestion 
+        question="What does length in pull apart basin represent"
+        answer="Direction of movement"
+      />
+      <OneLineQuestion
+        question="What does width in pull apart basin represent"
+        answer="Fracture zone"
+      />
+    </>
+  );
+};
+
 export const ForExamGeology = () => {
   return (
     <>
@@ -753,6 +1212,11 @@ export const ForExamGeology = () => {
       <Lec4 />
       <Lec5 />
       <Lec8 />
+      <Lec9 />
+      <Lec10 />
+      <Lec12 />
+      <Lec13 />
+      <Lec14 />
     </>
   );
 };

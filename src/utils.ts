@@ -154,5 +154,10 @@ const replaceWords = [
   ["intrudes", "intrude"],
   ["converts", "convert"],
   ["submerges", "submerge"],
-  ["arc", "arcs"]
+  ["arc", "arcs"],
+  ["bubbles", "bubble"],
+  ["expands", "expand"],
+  ["molecules", "molecule"],
+  ["polymers", "polymer"],
+  ["breaks", "break"]
 ];

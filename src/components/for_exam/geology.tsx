@@ -719,7 +719,7 @@ const Lec8 = () => {
         </Topic>
         <Topic topic="Continental and continental">
           <FillInTheBlanks
-            question={["Both", "are not as", "as", "so lots of", "builds"]}
+            question={["Both", "are not as","as", "so lots of", "builds"]}
             answer={["plates", "dense", "oceanic", "pressure"]}
           />
           <FillInTheBlanks

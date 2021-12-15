@@ -666,7 +666,7 @@ const Lec8 = () => {
         answer="When oceanic and continental plate move towards each other"
       />
       <OneLineQuestion
-        question="When does conservation plate margin happens"
+        question="When does conservative plate margin happens"
         answer="When two plates move parallel each other"
       />
       <OneLineQuestion
@@ -941,7 +941,7 @@ const Lec10 = () => {
           question={[
             "This",
             "flow causes the",
-            "materail above to be",
+            "material above to be",
             "along in the",
             "",
           ]}

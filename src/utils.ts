@@ -170,4 +170,7 @@ const replaceWords = [
   ["fissures", "fissure"],
   ["densities", "density"],
   ["places", "place"],
+  ["covers", "cover"],
+  ["mountains", "mountain"],
+  ["develops", "develop"]
 ];

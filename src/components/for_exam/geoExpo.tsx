@@ -70,6 +70,30 @@ const Lec4 = () => {
   );
 };
 
+const Lec6 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are the type of correction we should do in gravity surveying"
+        answer={[
+          "Tidal correction",
+          "Terrain correction",
+          "Bouguer correction",
+          "Free air correction",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are methods used to interpert anomalies"
+        answer={[
+          "Fitting by hand",
+          "Mathematical fitting",
+          "Complex processing",
+        ]}
+      />
+    </>
+  );
+};
+
 export const ForExamGeoExpo = () => {
   return (
     <>

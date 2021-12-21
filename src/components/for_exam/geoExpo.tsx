@@ -1,5 +1,6 @@
 import React from "react";
 import { Essay } from "../question/essay";
+import { Essay2 } from "../question/essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
@@ -154,11 +155,136 @@ const Lec8 = () => {
       />
       <OneLineQuestion
         question="What is P wave"
-        answer="Direction of vibration of molecule is along the direction of propagation"
+        answer="Particle motion is along the direction of propagation"
+      />
+      <OneLineQuestion
+        question="What is another name for P wave"
+        answer="Compressional wave"
       />
       <OneLineQuestion
         question="What is S wave"
-        answer="Direction of vibration of molecule is perpendicular to direction of propagation"
+        answer="Particle motion is perpendicular to direction of propagation"
+      />
+      <OneLineQuestion
+        question="What is another name for S wave"
+        answer="Shear wave"
+      />
+      <MultipleInputQuestion
+        question="What are the factors that affect seismic velocity in rocks"
+        answer={["Composition of rock", "Porosity", "Depth", "Age"]}
+      />
+      <OneLineQuestion
+        question="How does porosity affects seismic velocity"
+        answer="Pore spaces are generally occupied by low velocity material therefore overall seismic velocity decreases with porosity"
+      />
+      <OneLineQuestion
+        question="How does Depth affects seismic velocity"
+        answer="Porosity decreases and Elastic moduli increases with time therefore seismic velocity increases with depth "
+      />
+      <OneLineQuestion
+        question="How does Age affect seismic velocity"
+        answer="Cementation of sedimentary rock increases with age therefore seismic velocity increases with age"
+      />
+      <MultipleInputQuestion
+        question="What are factors that affect seismic wave amplitude"
+        answer={["Geometrical Spreading", "Attenuation", "Scattering"]}
+      />
+
+      <Essay2 question="Explain geometrical spreading">
+        <FillInTheBlanks
+          question={[
+            "Seismic wave originate from a",
+            "source and carry",
+            "away from the",
+            "as a",
+            "of",
+            "",
+          ]}
+          answer={[
+            "point",
+            "energy",
+            "source",
+            "spherical wavefront",
+            "expanding radius",
+          ]}
+        />
+        <FillInTheBlanks
+          question={["", "requires that the", "in the", "is", "at all time"]}
+          answer={[
+            "Conservation of energy",
+            "total energy",
+            "wavefront",
+            "constant",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "Therefore, as the",
+            "the",
+            "will be",
+            "over a",
+            "so that the",
+            "at each",
+            "on the",
+            "will",
+            "",
+          ]}
+          answer={[
+            "sphere expands",
+            "energy",
+            "spread out",
+            "large radius",
+            "energy",
+            "point",
+            "sphere",
+            "decrease",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="How does geometrical spreading affects amplitude"
+        answer="Amplitude of seismic wave will decrease by 1 / r as the wavefront sphere expands"
+      />
+      <OneLineQuestion
+        question="What is another name for geometrical spreading"
+        answer="Spherical Divergence"
+      />
+      <OneLineQuestion
+        question="How does Attenuation affects Amplitude"
+        answer="Exponential decrease in amplitude as seismic wave travels"
+      />
+      <OneLineQuestion
+        question="How does Attenuation affects amplitude for waves with higher frequency"
+        answer="Amplitude decreases more rapidly"
+      />
+      <Essay2 question="Explain Attenuation in detail">
+        <FillInTheBlanks
+          question={[
+            "As the seismic wave travels a material, the",
+            "is not perfectly",
+            "",
+          ]}
+          answer={["deformation", "elastic"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "Some",
+            "is converted into",
+            "due to",
+            "associated with",
+            "",
+          ]}
+          answer={[
+            "Energy",
+            "heat",
+            "friction",
+            "movement along grain boundary",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is scattering"
+        answer="Seismic energy will scattered as wave encounters heterogeneities in rock"
       />
     </>
   );
@@ -167,6 +293,14 @@ const Lec8 = () => {
 const Lec9 = () => {
   return (
     <>
+      <OneLineQuestion
+        question="What is reflection coefficient"
+        answer="Ratio of reflected ray amplitude and incident ray amplitude"
+      />
+      <OneLineQuestion
+        question="What is transmission coefficient"
+        answer="Ratio of transmitted ray amplitude and incident ray amplitude"
+      />
       <OneLineQuestion
         question="What is vertical resolution of seismic ray"
         answer="lambda / 4"
@@ -231,7 +365,7 @@ const Lec11 = () => {
     <>
       <OneLineQuestion
         question="What is normal moveout"
-        answer="Effect of sepration between source and detector on the arrival time of a reflection"
+        answer="Extra time taken for a wave to travel a non vertical path"
       />
     </>
   );
@@ -243,8 +377,8 @@ const Lec12 = () => {
       <MultipleInputQuestion
         question="What correction are should be done in seismic survey"
         answer={[
-          "Removal of Weathering",
-          "Removal of Elevation",
+          "Weathering correction",
+          "Elevation correction",
           "Velocity Analysis",
         ]}
       />
@@ -283,10 +417,6 @@ const Lec13 = () => {
           "Deconvolution and filtering of stacked zero offset traces",
           "Migration",
         ]}
-      />
-      <MultipleInputQuestion
-        question="Factors which affect seismic wave amplitude"
-        answer={["Geometrical spreading", "Attenuation", "Scattering"]}
       />
     </>
   );
@@ -329,6 +459,87 @@ const Lec14 = () => {
   );
 };
 
+const Lec17 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What does magnetic survey measures"
+        answer="Change in earth magnetic filed caused by variation in magnetic properties of rocks"
+      />
+      <MultipleInputQuestion
+        question="In what mode magnetic survey can be done"
+        answer={["Airborne", "Shipborne", "Ground based"]}
+      />
+      <MultipleInputQuestion
+        question="What property are calculated in data analysis"
+        answer={["Magnetic Susceptibility", "Remanent Magnetization"]}
+      />
+      <MultipleInputQuestion
+        question="Why is earth magnetic"
+        answer={[
+          "Geodynamo effect in Outercore",
+          "Crustal Magnetization",
+          "Solar Radiation",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec18 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is Magnetic susceptibility"
+        answer="Measures how susceptible a material is to becoming magnetized"
+      />
+      <MultipleInputQuestion
+        question="What are types of remanent Magetization"
+        answer={[
+          "Thermo remanent",
+          "Depositional Remanent",
+          "Chemical Remanent",
+          "Viscous Remanent",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are external factors that affects magnetic field"
+        answer={[
+          "Diurnal Variation",
+          "Lunar Variation",
+          "Magnetic Storm",
+          "Sunspots and solar flares",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are internal factors that affects magnetic field"
+        answer={[
+          "Reduction of the dipole field",
+          "Westward drift",
+          "Geomagnetic jerks",
+          "Magnetic field reversal",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are instruments used for measuring magnetic field"
+        answer={[
+          "Flux gate magnetometer",
+          "Proton Precession magnetometer",
+          "Alkali vapour magnetometer",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec19 = () => {
+  return (
+    <>
+      {/* <OneLineQuestion /> */}
+    </>
+  );
+};
+
 export const ForExamGeoExpo = () => {
   return (
     <>
@@ -342,6 +553,8 @@ export const ForExamGeoExpo = () => {
       <Lec11 />
       <Lec12 />
       <Lec13 />
+      <Lec17 />
+      <Lec18 />
     </>
   );
 };

@@ -1160,6 +1160,80 @@ const Lec20 = () => {
   );
 };
 
+const UpstreamFacilities = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is christmas tree"
+        answer="Collection of valves and fitting to control fluid flow"
+      />
+      <MultipleInputQuestion
+        question={["The wellhead consists of", "and", ""]}
+        answer={["Casing head", "tubing head"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "The fluids flow from wellhead assembly to",
+          "and",
+          "facilities through",
+          ""
+        ]}
+        answer={["Separation", "Storage", "flowline"]}
+      />
+      <OneLineQuestion
+        question="What is seperator"
+        answer="Used for seperating gas, oil and water phases based on fluid density"
+      />
+      <OneLineQuestion
+        question={[
+          "Separators take advantage of",
+          "to separate the fluids after production",
+        ]}
+        answer="Gravity Segregation"
+      />
+      <OneLineQuestion
+        question="What separator is used to separate water and liquid phase"
+        answer="Two phase separator"
+      />
+      <OneLineQuestion
+        question="What separator is used to separate water, liquid and gas phase"
+        answer="Three phase separator"
+      />
+      <OneLineQuestion
+        question="What is heater treater"
+        answer="Separator that uses heat to separate oil and water"
+      />
+      <MultipleInputQuestion
+        question="What are equipments in upstream surface facilities"
+        answer={[
+          "Dehydrators",
+          "Storage tanks",
+          "Flowlines",
+          "Wellheads",
+          "Compressors",
+          "Automation equipment",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is the use of automation equipment"
+        answer="Monitor and control wells"
+      />
+      <OneLineQuestion
+        question="What is the use of storage tanks"
+        answer="Store produced oil and water unit the liquids can be transported away from the field"
+      />
+      <OneLineQuestion
+        question="Whats the name for collection of storage tanks"
+        answer="Tank battery"
+      />
+      <OneLineQuestion
+        question="What is the use of compressor"
+        answer="To increase the pressure of the gas so it can be injected into flowline"
+      />
+    </>
+  );
+};
+
 export const ForExamITPO = () => {
   return (
     <>

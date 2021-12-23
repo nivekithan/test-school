@@ -8,7 +8,7 @@ import { ForExamThermoDynamics } from "./components/for_exam/thermodynamics";
 export const App = () => {
   return (
     <div className="mx-[10%] my-20 flex flex-col gap-y-10">
-      <ForExamITPO />
+      <ForExamThermoDynamics />
     </div>
   );
 }

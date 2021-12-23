@@ -9,45 +9,6 @@ import { Topic } from "../question/topic";
 import { TrueOrFalse } from "../question/trueOrFalse";
 import { JumbleQuestions } from "../utils";
 
-const Lec3 = () => {
-  return (
-    <>
-      {/* <MultipleInputQuestion
-        question="What are different hypothesis which explains Origin of earth"
-        answer={[
-          "Nebular Hypothesis",
-          "Planetesmial hypothesis",
-          "Gaseous tidal hypothesis",
-          "Binary star Hypothesis",
-          "Gas duct clout hypothesis",
-          "Big bang theory",
-        ]}
-      />
-      {
-        // TODO:  Convert the following question into Essay
-      }
-      <FillInTheBlanks
-        question="Discuss about formation of solar system"
-        answer={[
-          "Solar system was originally a diffuse cloud of dust and gas",
-          "This dust and gas began to coalesc due to gravity",
-          "Shrinking mass began to rotate and formed a disk",
-          "Mass broke up into a discreate protosun orbited by large protoplanets",
-          "Sun heated until fusion temperature were reached",
-          "Heat from sun drove most of the hydrogen and helium away from the closet planets, leaving small, solid cores behind",
-          "The massive outer planets are still composed mostly of hydrogen and helium",
-          "At the same time planets were forming, gravitational attraction pulled the gases in the protosun inward, creating extremely high pressure and temperature",
-          "Core become so hot that hydrogen nuclei combined to form the nucleus to form the nucleus of the next heavier element helium in the process called nuclear fusion",
-          "The onset of nuclear fusion marked the birth of the modern sun which still generates its energy by hydrogen fusion",
-          "Heat from the sun boiled most of the hydrogen, helium and other light elements away from the inner solar system",
-          "Mercury, Venus, earth and mars are now mainly rock and they are called terrestrial planet",
-          "Jupiter, Saturn, Uranus and neptune are called Jovian planets and are composed primarily of liquids and gases with small and metallic cores",
-        ]}
-      /> */}
-    </>
-  );
-};
-
 const Lec4 = () => {
   return (
     <>
@@ -1193,13 +1154,308 @@ const Lec14 = () => {
         question="What are basins formed in transform plate margin"
         answer={["Pull Apart basin"]}
       />
-      <OneLineQuestion 
+      <OneLineQuestion
         question="What does length in pull apart basin represent"
         answer="Direction of movement"
       />
       <OneLineQuestion
         question="What does width in pull apart basin represent"
         answer="Fracture zone"
+      />
+      <MultipleInputQuestion
+        question="What are primary minerals in granite"
+        answer={["Quartz", "Hornblende", "Feldspar"]}
+      />
+      <MultipleInputQuestion
+        question="How are rocks are divided by chemical composition"
+        answer={[
+          "Silicates",
+          "Carbonates",
+          "Oxides",
+          "Sulphides",
+          "Halides",
+          "Native Elements",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec15 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are properties of mineral"
+        answer={[
+          "Naturally occurring",
+          "Inorganic solid",
+          "Ordered internal molecular structure",
+          "Definite chemical composition",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are type of physical properties of minerals"
+        answer={[
+          "Color and streak",
+          "Luster",
+          "Crystal form",
+          "Cleavage",
+          "hardness",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are types of minerals"
+        answer={["Rock forming minerals", "Ore forming minerals"]}
+      />
+      <MultipleInputQuestion
+        question="What are mineral groups in rock forming minerals"
+        answer={[
+          "Silicates",
+          "Carbonates",
+          "Oxides",
+          "Sulphides",
+          "Halides",
+          "Native Elements",
+        ]}
+      />
+    </>
+  );
+};
+
+const Lec16 = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are examples of rock forming minerals"
+        answer={["Quartz", "Calcite"]}
+      />
+      <MultipleInputQuestion
+        question="What are examples of ore forming minerals"
+        answer={["Barite", "Bauxite"]}
+      />
+    </>
+  );
+};
+
+const Lec20 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is ore"
+        answer="Rock with high concentration of a mineral which can be commerically recovered"
+      />
+      <MultipleInputQuestion
+        question="What are types of rock"
+        answer={["Primary rock", "Secondary rock"]}
+      />
+      <OneLineQuestion
+        question="What type of rocks are in primary rock"
+        answer="Igneous rock"
+      />
+      <MultipleInputQuestion
+        question="What type of rocks are in secondary rock"
+        answer={["Sedimentary rock", "Metamorphic rock"]}
+      />
+      <MultipleInputQuestion
+        question="What are properties of igneous rock"
+        answer={["Non permeable", "Non porous"]}
+      />
+      <MultipleInputQuestion
+        question="What are factors that affect melting of rocks"
+        answer={["Pressure", "Water content", "Composition"]}
+      />
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="Felsic minerals melt at lower temperature than Mafic minerals"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="Felsic minerals melt at higher temperature than Mafic minerals"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <OneLineQuestion
+        question="What is magma differentiation"
+        answer="Process by which rocks of various composition can arise from a uniform parent magma"
+      />
+      <FillInTheBlanks
+        question="What are steps in formation of magma chambers"
+        answer={[
+          "Partial melting",
+          "Less dense magma",
+          "Magma rises",
+          "Magma pools in magma chamber",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is stock"
+        answer="Vertical intrusion of magma which erupts on surface"
+      />
+      <MultipleInputQuestion
+        question="How do we classify igneous rocks"
+        answer={["Appearance", "Genetic origin", "Composition"]}
+      />
+      <MultipleInputQuestion
+        question="On what parameters we classify igneous rocks based on appearance"
+        answer={["Mineralogy", "Texure"]}
+      />
+      <OneLineQuestion
+        question="What is texture of rock"
+        answer="Arrangement of grains"
+      />
+      <MultipleInputQuestion
+        question="What are types of igneous rocks classified based on Igneous rock"
+        answer={["Aphanitic", "Phaneritic", "Porphyritic", "Glassy"]}
+      />
+      <OneLineQuestion
+        question="What is Aphanitic"
+        answer="Crystals too small to see by eye"
+      />
+      <OneLineQuestion
+        question="What is Phaneritic"
+        answer="Can see consitutent minerals"
+      />
+      <OneLineQuestion
+        question="What is Porphyritic"
+        answer="Bimodal grain size distribution"
+      />
+      <OneLineQuestion question="What is glassy" answer="No crystals formed" />
+      <MultipleInputQuestion
+        question="On what parameters we classify igneous rocks based on genetic origin"
+        answer={["Intrusive", "Extrusive"]}
+      />
+      <MultipleInputQuestion
+        question="On what parameters we classify igneous rocks based on composition"
+        answer={["Chemistry", "Mineralogy"]}
+      />
+      <OneLineQuestion
+        question="How does chemistry is used to classify igneous rocks"
+        answer="Determining the silica content of a rock"
+      />
+      <FillInTheBlanks
+        question={[
+          "Percentage of silica in igneous rock ranges from",
+          "to",
+          "",
+        ]}
+        answer={["40%", "70%"]}
+      />
+      <MultipleInputQuestion
+        question="What are types of igneous rock classified based on chemistry"
+        answer={["Silica rich", "Silica poor"]}
+      />
+      <MultipleInputQuestion
+        question="What are types of igneous rock classified based on Mineralogy"
+        answer={["Felsic", "Intermediate", "Mafic", "Ultramafic"]}
+      />
+      <FillInTheBlanks
+        question={["Felsic igneous rock is", "in minerals containing silica"]}
+        answer={["High"]}
+      />
+      <FillInTheBlanks
+        question={[
+          "Felsic igneous rock is",
+          "in minerals containing iron and magnesium",
+        ]}
+        answer={["low"]}
+      />
+      <MultipleInputQuestion
+        question="What are examples of felsic igneous rock"
+        answer={["Granite", "Rhyolite"]}
+      />
+      <MultipleInputQuestion
+        question="What are examples of intermediate igneous rock"
+        answer={["Dacite", "Diorite"]}
+      />
+      <MultipleInputQuestion
+        question="What are examples of mafic igneous rock"
+        answer={["Gabbro", "Basalt"]}
+      />
+      <OneLineQuestion
+        question="What are examples of ultramafic igneous rock"
+        answer="Peridotite"
+      />
+    </>
+  );
+};
+
+const Lec23 = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is diagenesis"
+        answer="Change in form that occurs in sedimentary rock"
+      />
+      <MultipleInputQuestion
+        question="In what condition diagenesis occurs"
+        answer={["Temperature below 200C", "Pressure below 300 MPa"]}
+      />
+      <OneLineQuestion
+        question="What is metamorphsim"
+        answer="Recrystallization of pre existing rock without melting"
+      />
+      <MultipleInputQuestion
+        question="In what condition metamorphism occurs"
+        answer={["Temperature above 200C", "Pressure above 300 MPa"]}
+      />
+      <OneLineQuestion
+        question="Where does upper limit of metamorphism occurs"
+        answer="Pressure and Temperature where melting of rock begins"
+      />
+      <OneLineQuestion
+        question="What is Metamorphic grade"
+        answer="General term describing relative temperature and pressure condition under which metamorphic rocks form"
+      />
+      <MultipleInputQuestion
+        question="What are different types of metamorphic grade"
+        answer={["Low grade", "High grade"]}
+      />
+      <MultipleInputQuestion
+        question="What are condition in which low grade metamorphism takes place"
+        answer={["200 to 320C", "Relatively low pressure"]}
+      />
+      <MultipleInputQuestion
+        question="What are conditions in which high grade metamorphism takes place"
+        answer={["Temperature greater than 320C", "Relatively high pressure"]}
+      />
+      <OneLineQuestion
+        question="How much hydrous minerals are present in low grade metamorphism"
+        answer="Huge amount of hydrous minerals"
+      />
+      <OneLineQuestion
+        question="What happens to hydrous minerals with increasing grade of metamorphism"
+        answer="Hydrous minerals reacts with other minerals or break down into less hydrous minerals"
+      />
+      <MultipleInputQuestion
+        question="What are types of metamorphism"
+        answer={["Contact Metamorphism"]}
+      />
+      <OneLineQuestion
+        question="What is contact Metamorphism"
+        answer="Occurs adjacent to igneous intrusion and results from higher tempearture associated with igneous intrusion"
+      />
+      <OneLineQuestion
+        question="What is zone surronding near to intrusion in contact metamorphism is called"
+        answer="Contact Aureole"
+      />
+    
+      <JumbleQuestions>
+        <TrueOrFalse
+          question="In contact metamorphism rocks outside contact aureole does not undergo metamorphism"
+          answer={true}
+        />
+        <TrueOrFalse
+          question="In contact metamorphism rocks outside contact aureole does undergo metamorphism"
+          answer={false}
+        />
+      </JumbleQuestions>
+      <OneLineQuestion
+        question="Contact metamorphism is also referred as"
+        answer="High temperature, low pressure metamorphism"
+      />
+      <OneLineQuestion
+        question="What type of rock is produced from contact metamorphism"
+        answer="Fine grained rock with no foliation called as hornfels"
       />
     </>
   );
@@ -1208,7 +1464,6 @@ const Lec14 = () => {
 export const ForExamGeology = () => {
   return (
     <>
-      <Lec3 />
       <Lec4 />
       <Lec5 />
       <Lec8 />
@@ -1217,6 +1472,9 @@ export const ForExamGeology = () => {
       <Lec12 />
       <Lec13 />
       <Lec14 />
+      <Lec15 />
+      <Lec16 />
+      <Lec20 />
     </>
   );
 };

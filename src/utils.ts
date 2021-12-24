@@ -181,4 +181,12 @@ const replaceWords = [
   ["engines", "engine"],
   ["subducts", "subduct"],
   ["developed", "develop"],
+  ["movers", "mover"],
+  ["motors", "motor"],
+  ["pumps", "pump"],
+  ["drawworks", "drawwork"],
+  ["drums", "drum"],
+  ["suspended", "suspend"],
+  ["blocks", "block"],
+  ["pits", "pit"],
 ];

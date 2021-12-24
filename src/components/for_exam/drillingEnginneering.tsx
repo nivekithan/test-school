@@ -1,9 +1,277 @@
 import React from "react";
 import { Essay } from "../question/essay";
+import { Essay2 } from "../question/essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
 import { MultipleInputQuestion } from "../question/multipleInputQuestion";
 import { OneLineQuestion } from "../question/oneLineQues";
 import { TrueOrFalse } from "../question/trueOrFalse";
+
+const RigComponent = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are different subsystem in Rig componenet"
+        answer={[
+          "Power system",
+          "Hoisting system",
+          "Circulating system",
+          "Rotary system",
+          "Well control system",
+        ]}
+      />
+      <Essay2 question="Describe Power system">
+        <FillInTheBlanks
+          question={[
+            "Most",
+            "are required to",
+            "in",
+            "locations where a",
+            "is often",
+            "",
+          ]}
+          answer={[
+            "drilling rigs",
+            "operate",
+            "remote",
+            "power supply",
+            "not available",
+          ]}
+        />
+        <FillInTheBlanks
+          question={["The", "are driven by", "powered", "called", ""]}
+          answer={[
+            "electrical power generators",
+            "diesel",
+            "internal combustion engine",
+            "Prime Mover",
+          ]}
+        />
+        <MultipleInputQuestion
+          question={[
+            "",
+            "is then supplied to",
+            "connected to the",
+            ",",
+            "and",
+            "",
+          ]}
+          answer={[
+            "Power",
+            "electric motor",
+            "drawworks",
+            "rotary table",
+            "mud pumps",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is hoisting system"
+        answer="Large pulley system that is used to lower and raise equipment into and out of the well"
+      />
+      <MultipleInputQuestion
+        question="What are componenets of hoisting system"
+        answer={[
+          "Crown block",
+          "Dead line",
+          "Fast line",
+          "Travelling block",
+          "Drawworks drum",
+          "Drawworks",
+          "Drilling hook",
+          "Elevators",
+          "Dead line anchor",
+          "Reserve drum",
+        ]}
+      />
+      <Essay2 question="Write about drawworks Drawworks">
+        <FillInTheBlanks
+          question={["The drawworks consist of", "around which", "is", ""]}
+          answer={["large revolving drum", "drilling line", "spooled"]}
+        />  
+        <FillInTheBlanks
+          question={["", "is connected to", "and", ""]}
+          answer={["Drawworks drum", "electric motor", "gearing system"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The",
+            "controls the drawworks with a",
+            "and",
+            "while",
+            "and a",
+            "when running",
+            "",
+          ]}
+          answer={[
+            "driller",
+            "clutch",
+            "gearing system",
+            "lifting equipment out of the well",
+            "break",
+            "equipment into the well",
+          ]}
+        />
+      </Essay2>
+      <Essay2 question="Write about drilling line">
+        <FillInTheBlanks
+          question={[
+            "The drilling line is",
+            "over a set of",
+            "in the",
+            "known as",
+            "and to another set of",
+            "known as",
+            "",
+          ]}
+          answer={[
+            "reeved",
+            "sheaves",
+            "top of derrick",
+            "Crown block",
+            "sheaves",
+            "travelling block",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "One of end of drilling line is",
+            "onto the drawworks and is called",
+            "",
+          ]}
+          answer={["wound", "fast line"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "One end of drilling line is",
+            "to an",
+            "somewhere",
+            ", Since this line",
+            "it is called",
+            "",
+          ]}
+          answer={[
+            "secured",
+            "anchor point",
+            "below the rig floor",
+            "does not move",
+            "dead line",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is drilling hook"
+        answer="Large hook with snap shut locking device which is suspended from travelling block used to suspend drill string"
+      />
+      <OneLineQuestion
+        question="What is elevators"
+        answer="Set of clamps used when running or pulling the drill string or casing into or out of hole"
+      />
+      <MultipleInputQuestion
+        question="What does load supported by hoisting system depends on"
+        answer={[
+          "Tensile strength of drilling line",
+          "Number of times drilling line is reeved through the blocks",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is the function of Circulating system"
+        answer="Circulate drilling fluid through the drill string and up the annulus carrying the drilled cutting from the bottom of hole to surface"
+      />
+      <MultipleInputQuestion
+        question="What are main componenets of Circulating system"
+        answer={[
+          "Mud pumps",
+          "Stand pipe",
+          "Shale Shakers",
+          "Mud pits",
+          "Suction line",
+          "flow line",
+        ]}
+      />
+      <Essay2 question="What happens in Circulating system">
+        <FillInTheBlanks
+          question={["The mud is", "and", "in the", "and then", "by", ""]}
+          answer={[
+            "mixed",
+            "conditioned",
+            "mud pits",
+            "circulated down the hole",
+            "mud pump",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The mud is them pumped through the",
+            ",",
+            ",",
+            ",",
+            "and",
+            "",
+          ]}
+          answer={[
+            "stand pipe",
+            "kelly hose",
+            "swivel",
+            "kelly",
+            "down the drill string",
+          ]}
+        />
+        <FillInTheBlanks
+          question={[
+            "On surface the mud is directed from",
+            "through the",
+            "and before it",
+            "the",
+            "the",
+            "by the",
+            "",
+          ]}
+          answer={[
+            "annulus",
+            "flow line",
+            "re enters",
+            "mud pits",
+            "drilled cutting are removed from drilling mud",
+            "shale shakers",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is the function of Rotary system"
+        answer="Rotate the drill string and the drill bit on the bottom of hole"
+      />
+      <MultipleInputQuestion
+        question="What are main components of rotary system"
+        answer={[
+          "Swivel",
+          "kelly bushing",
+          "Rotary bushing",
+          "Rotary table",
+          "Slips",
+          "Kelly",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are the functions of well control system"
+        answer={[
+          "Prevent uncontrolled flow of formation fluids from the wellbore",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="How well control system is designed"
+        answer={[
+          "Detect a kick",
+          "Close in the well at surface",
+          "Remove formation fluid which has flowed into the well",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are components of well control system"
+        answer={["Annular blowout preventer", "Ram blowout preventer"]}
+      />
+    </>
+  );
+};
 
 const Lec4 = () => {
   return (
@@ -261,6 +529,7 @@ const Lec4 = () => {
 export const ForExamDrillingEnginneering = () => {
   return (
     <>
+      <RigComponent />
       <Lec4 />
     </>
   );

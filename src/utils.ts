@@ -81,10 +81,10 @@ const ignoreWords = [
   "because",
   "with",
   "they",
+  "when",
 ].map((s) => ` ${s} `);
 
 const replaceWords = [
-  ["  ", " "],
   ["values", "value"],
   ["differences", "difference"],
   ["do not", "cannot"],
@@ -179,4 +179,6 @@ const replaceWords = [
   ["returns", "return"],
   ["increases", "increase"],
   ["engines", "engine"],
+  ["subducts", "subduct"],
+  ["developed", "develop"],
 ];

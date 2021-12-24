@@ -416,7 +416,7 @@ const Lec5 = () => {
       </Essay2>
       <OneLineQuestion
         question="What is Geological cycle"
-        answer="All the process that happens inside and outside of earth and how they are related to each other"
+        answer="All the geological process that happens inside and outside of earth and how they are related to each other"
       />
       <MultipleInputQuestion
         question="What are main cycles in Geological cycle"
@@ -732,12 +732,12 @@ const Lec9 = () => {
           answer="Sill"
         />
         <OneLineQuestion
-          question="What is dyke"
+          question="What is dike"
           answer="Vertical magma intrusion"
         />
         <OneLineQuestion
           question="What is another name for vertical magma intrusion"
-          answer="Dyke"
+          answer="Dike"
         />
       </JumbleQuestions>
       <MultipleInputQuestion
@@ -754,7 +754,7 @@ const Lec9 = () => {
           answer={true}
         />
         <TrueOrFalse
-          question="Movement of plate in constructive plate margin cannout cause earthquake"
+          question="Movement of plate in constructive plate margin cannot cause earthquake"
           answer={false}
         />
       </JumbleQuestions>
@@ -1438,7 +1438,7 @@ const Lec23 = () => {
         question="What is zone surronding near to intrusion in contact metamorphism is called"
         answer="Contact Aureole"
       />
-    
+
       <JumbleQuestions>
         <TrueOrFalse
           question="In contact metamorphism rocks outside contact aureole does not undergo metamorphism"

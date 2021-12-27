@@ -1,4 +1,5 @@
 import React from "react";
+import { Question } from "../common";
 import { Essay } from "../question/essay";
 import { Essay2 } from "../question/essay2";
 import { FillInTheBlanks } from "../question/fillInTheBlanks";
@@ -533,9 +534,220 @@ const Lec18 = () => {
 };
 
 const Lec19 = () => {
+  return <>{/* <OneLineQuestion /> */}</>;
+};
+
+const GeophyNote = () => {
   return (
     <>
-      {/* <OneLineQuestion /> */}
+      <JumbleQuestions>
+        <MultipleInputQuestion
+          question="What is quantity measured in field survey for Seismic exploration"
+          answer={["Travel time", "Amplitude of seismic waves"]}
+        />
+        <MultipleInputQuestion
+          question="What is quantity measured in field survey for gravity exploration"
+          answer={["Gravitational force"]}
+        />
+        <MultipleInputQuestion
+          question="What is quantity measured in field survey for Magnetic exploration"
+          answer={["Magnetic field"]}
+        />
+        <MultipleInputQuestion
+          question="What property is calculated in data analysis in seismic exploration"
+          answer={["Seismic velocity"]}
+        />
+        <MultipleInputQuestion
+          question="What property is calculated in data analysis in gravity exploration"
+          answer={["Density"]}
+        />
+        <MultipleInputQuestion
+          question="What property is calculated in data analysis in magnetic exploration"
+          answer={["Magnetic Susceptibility", "Remanent Magnetization"]}
+        />
+      </JumbleQuestions>
+      <OneLineQuestion
+        question="What is gravity data correction"
+        answer="Series of data processing steps that correct for all variation in gravity field that are not caused by density variation of the subsurface rocks"
+      />
+      <MultipleInputQuestion
+        question="What are gravity data correction methods"
+        answer={[
+          "Temporal correction",
+          "Latitude correction",
+          "Elevation correction",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are different methods in Temporal correction"
+        answer={["Tidal effect", "Instrument drift"]}
+      />
+      <OneLineQuestion
+        question="What is tidal effect"
+        answer="Gravitational pull of sun and moon causes tides on earth and also changes gravity in a specified location"
+      />
+      <OneLineQuestion
+        question="What is instrumental drift"
+        answer="Spring in relative gravimeter will stretch due to both temperature induced change and temporal change in elastic properties of spring"
+      />
+      <OneLineQuestion
+        question="What is latitude correction"
+        answer="Gravity field on earth surface changes with latitude"
+      />
+      <MultipleInputQuestion
+        question="Why does gravity changes with latitude"
+        answer={["Mass", "Centrifugal force", "Non spherical earth"]}
+      />
+      <MultipleInputQuestion
+        question="What are different methods in Elevation correction"
+        answer={["Free air correction", "Bouguer correction"]}
+      />
+      <OneLineQuestion
+        question="What is free air correction"
+        answer="Change is gravity as we move away from the center of earth"
+      />
+      <OneLineQuestion
+        question="What is bouguer correction"
+        answer="With change in elevation there will be also change in mass"
+      />
+
+      <MultipleInputQuestion
+        question="When the reference point is above reference level how we should do free air correction and bouguer correction"
+        answer={["Add free air correction", "Subtract bouguer correction"]}
+      />
+      <MultipleInputQuestion
+        question="When the reference point is below reference level how we should do free air correction and bouguer correction"
+        answer={["Subtract free air correction", "Add bouguer correction"]}
+      />
+      <OneLineQuestion
+        question="How does half width technique help"
+        answer="Width of gravity anomaly is related to depth of density anomaly"
+      />
+      <OneLineQuestion
+        question="How does width of gravity anomaly is related to depth of density anomaly "
+        answer="Deeper structure produces wider anomaly"
+      />
+      <OneLineQuestion
+        question="In what shape 2D anomaly can be interpreted "
+        answer="Cylinder"
+      />
+      <OneLineQuestion
+        question="What is the formula for 2D anomaly"
+        answer="Z = X"
+      />
+      <OneLineQuestion
+        question="In what shaper 3D anomaly can be interpreted"
+        answer="Sphere"
+      />
+      <OneLineQuestion
+        question="What is the formula for 3D anomaly"
+        answer="Z = 1.305X"
+      />
+      <MultipleInputQuestion
+        question="What are application of gravity exploration"
+        answer={[
+          "Map thickness and extent of sedimentary basins",
+          "Map the distribution and geometry of sediment basins",
+          "Satellite gravity data for offsore operations",
+        ]}
+      />
+      <OneLineQuestion
+        question="How does sedimentary basins appear in gravity exploration"
+        answer="Gravity lows"
+      />
+      <OneLineQuestion
+        question="Why do sedimentary basins appear as gravity low"
+        answer="Low density"
+      />
+      <OneLineQuestion
+        question="How does salt structure appear in gravity exploration"
+        answer="Negative gravity anomaly"
+      />
+      <OneLineQuestion
+        question="Why does salt structure appear as negative gravity anomaly"
+        answer="Lower density than sediments"
+      />
+      <OneLineQuestion
+        question="What is significance of salt structures"
+        answer="Upward movement of buoyant salt through sedimentary layers is important for formation of petroleum reservoirs"
+      />
+      <OneLineQuestion
+        question="What does magnetometers measures"
+        answer="Magnetic flux density at the earth surface"
+      />
+      <MultipleInputQuestion
+        question="What are different types of magnetometers"
+        answer={[
+          "Proton precession magnetometer",
+          "Alkali vapour magnetometer",
+        ]}
+      />
+      <Essay2 question="Write about proton precession magnetometer">
+        <FillInTheBlanks
+          question={[
+            "It contains a",
+            "that is ",
+            "with a ",
+            "liquid that is",
+            "by a",
+            "",
+          ]}
+          answer={["flask", "filled", "proton rich", "surrounded", "coil"]}
+        />
+        <FillInTheBlanks
+          question={["The", "behaves as a", "and", "with the", ""]}
+          answer={[
+            "H nuclei",
+            "magnetic dipoles",
+            "align",
+            "geomagnetic field",
+          ]}
+        />
+      </Essay2>
+      <OneLineQuestion
+        question="What is precission of proton precission magnetometer"
+        answer="0.1 to 1 nT"
+      />
+      <OneLineQuestion
+        question="What about readings of proton precission magnetometer"
+        answer="Readings are discontinuous"
+      />
+      <OneLineQuestion
+        question="What is precission of Alkali vapour magnetometer"
+        answer="0.01 nT"
+      />
+      <OneLineQuestion
+        question="What about readings of precission magnetometer"
+        answer="Readings are taken very rapidly"
+      />
+      <MultipleInputQuestion
+        question="What are different methods of data reduction in magnetic survey"
+        answer={["Temporal variation", "Spatial variation"]}
+      />
+      <MultipleInputQuestion
+        question="What are different variation in temporal variation"
+        answer={["Instrumental drift", "Diurnal Variation"]}
+      />
+      <MultipleInputQuestion
+        question="What are different variation in spatial variation"
+        answer={[
+          "Horizontal variation",
+          "Vertical variation",
+          "Topography variation",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="How can regional magnetic field can be removed"
+        answer={[
+          "Subtracting base station reading from survey data",
+          "Subtracting IGRF from observed data",
+          "Estimating the regional magnetic field and subtracting it",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are different magnetic data enchancement method"
+        answer={["Reduction to pole", "Upward and downward continuation"]}
+      />
     </>
   );
 };

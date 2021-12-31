@@ -251,73 +251,7 @@ const DiamondBits = () => {
         ]}
         answer={["Harder", "Rock formations", "efficiently"]}
       />
-      <Essay
-        question="Explain about the manufacturing of diamond bit"
-        points={[
-          ["A", "is machined with", ""],
-          ["", "are placed in a", "and covered with", ""],
-          [
-            "With the",
-            "in position, the",
-            "is",
-            "till the",
-            "and then is allowed to",
-            "",
-          ],
-          [
-            "In this manner, the",
-            "are held in a",
-            ", which is attached to the",
-            "",
-          ],
-          ["The", "is composed of", "material"],
-          [
-            "The",
-            "must",
-            "at a sufficiently",
-            "so that",
-            "may not be",
-            "in the process",
-          ],
-          [
-            "The",
-            "in",
-            "are necessary in order to prevent the",
-            "and",
-            "in the",
-            "causing the",
-            "",
-          ],
-        ]}
-        answer={[
-          ["Steel bit blank", "threads"],
-          ["Diamonds", "bit mold", "powdered materials"],
-          [
-            "Bit blank",
-            "assembly",
-            "heated",
-            "Powdered materials fuses",
-            "cool",
-          ],
-          ["Diamonds", "matrix", "steel bit blank"],
-          ["Matrix", "hard tungsten carbide"],
-          [
-            "binder materials",
-            "melt",
-            "low temperature",
-            "diamonds",
-            "injured",
-          ],
-          [
-            "Hard particles",
-            "matrix",
-            "erosion",
-            "wear",
-            "bit",
-            "loss of diamonds",
-          ],
-        ]}
-      />
+     
     </>
   );
 };

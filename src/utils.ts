@@ -189,4 +189,15 @@ const replaceWords = [
   ["suspended", "suspend"],
   ["blocks", "block"],
   ["pits", "pit"],
+  ["solids", "solid"],
+  ["chemicals", "chemical"],
+  ["problems", "problem"],
+  ["causes", "cause"],
+  ["clays", "clay"],
+  ["leads", "lead"],
+  ["acts", "act"],
+  ["connections", "connection"],
+  ["walls", "wall"],  
+  ["gases", "gas"],
+  ["subs", "sub"]
 ];

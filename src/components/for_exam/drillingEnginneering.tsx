@@ -280,8 +280,8 @@ const Lec4 = () => {
         question="What are the functions of Drilling mud"
         answer={[
           "Transport cuttings from the wellbore",
-          "Prevent formation fluids flowing into wellbore",
-          "Mantain wellbore stability",
+          "Prevent influx of formation fluids",
+          "Maintain wellbore stability",
           "Cool and lubricate the bit",
           "Transmit hydraulic horsepower to bit",
         ]}
@@ -626,7 +626,7 @@ const Lec4 = () => {
       />
       <OneLineQuestion
         question="Why oil based mud is bettern in water sensitive formation"
-        answer="Oil based mud does not hydrate or well clays"
+        answer="Oil based mud does not hydrate or swell clays"
       />
       <OneLineQuestion
         question="Why oil based is useful in drilling high angle wells"
@@ -665,7 +665,7 @@ const Lec4 = () => {
       />
       <OneLineQuestion
         question="Write about water in Invert emulsion oil mud"
-        answer="Internal emulsion fluid"
+        answer="Internal emulsion phase"
       />
       <OneLineQuestion
         question="What is OWR"
@@ -705,7 +705,7 @@ const Lec4 = () => {
       />
       <OneLineQuestion
         question="Why we need to oil wet all solids"
-        answer="IF solids became water wet they will not be suspended in the fluid and would settle out of the system"
+        answer="If solids became water wet they will not be suspended in the fluid and would settle out of the system"
       />
       <OneLineQuestion
         question="What is organophillic clay"
@@ -850,6 +850,7 @@ const Lec4 = () => {
           "Drill pipe",
           "Drill collar",
           "bit",
+          "Swivel",
         ]}
       />
       <MultipleInputQuestion
@@ -1059,11 +1060,329 @@ const Lec4 = () => {
   );
 };
 
+const DrillString = () => {
+  return (
+    <>
+      <OneLineQuestion
+        question="What is drill string subs"
+        answer="Short, threaded piece of pipe used to adapt parts of drill string that cannot otherwise be screwed together because of difference in thread size and design"
+      />
+      <MultipleInputQuestion
+        question="What are some examples of drill string subs"
+        answer={["Kelly sub", "Cross over sub", "Drill collar sub", "Bit sub"]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of swivel"
+        answer={[
+          "Provide connection for the rotary hose",
+          "Provide passageway for the flow of drilling fluid into drillstem",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are accessories of kelly"
+        answer={["kelly saver sub", "kelly cock"]}
+      />
+      <OneLineQuestion
+        question="What is kelly saver sub"
+        answer="Small sub connected to bottom of the kelly"
+      />
+      <OneLineQuestion
+        question="What is the function of kelly saver sub"
+        answer="Protect kelly threads from wear during excessive tripping and drilling operations"
+      />
+      <OneLineQuestion
+        question="What is kelly cock"
+        answer="Small sub installed on top of the kelly or below kelly saver sub"
+      />
+      <OneLineQuestion
+        question="What is the function of kelly cock when use above kelly"
+        answer="It acts as a back pressure value protecting equipments above the kelly to shut off the drill pipe under pressure"
+      />
+      <MultipleInputQuestion
+        question="What is kelly bushing"
+        answer={[
+          "Device when fitted to master bushing transmits torque to the kelly",
+          "Permits vertical movement of kelly to make hole",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are types of drill pipe tool joints"
+        answer={[
+          "Internal external upset",
+          "External upset",
+          "Internal flush",
+          "Internal upset",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is internal external upset"
+        answer="Internal diameter is less and tool joint outer diameter is larger"
+      />
+      <OneLineQuestion
+        question="What is external upset"
+        answer="Outer diameter is larger but inner diameter is same"
+      />
+      <OneLineQuestion
+        question="What is internal flush"
+        answer="Both internal diameter and outer diameter is same as Drill pipe"
+      />
+      <OneLineQuestion
+        question="What is internal upset"
+        answer="Internal diameter is less but outer diameter is approximately same"
+      />
+      <OneLineQuestion
+        question="What is strongest connection in tool joint"
+        answer="Internal external upset"
+      />
+      <OneLineQuestion
+        question="What is another name for internal upset"
+        answer="Slim hole pipe"
+      />
+      <MultipleInputQuestion
+        question="What is different dimensional characteristic of heavy weight drill pipe from drill pipe"
+        answer={[
+          "Tube wall is heavier about 1 inch thick",
+          "Tool joints are longer",
+          "Tube section has larger diameter at mid length to protect the pipe from wear",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="For what reasons Heavy weight drill pipe were developed"
+        answer={[
+          "Transition member to be run between drill collars and drill pipe",
+          "Flexible weight member to run on directional drilling",
+          "As a weight member on small rigs drilling small diameter holes",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of stabilisers"
+        answer={[
+          "Centralizes the well during drilling",
+          "Prevent unnecessary vibration of drill string during drill string",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are functions of roller reamers"
+        answer={[
+          "Allows to enlarge the size of borehole during drilling",
+          "Increases the accuracy of drilling",
+        ]}
+      />
+      <OneLineQuestion
+        question="What is the function shock sub"
+        answer="To absorb the energy from the vibration"
+      />
+      <Essay2 question="Explain in detail about drill string design">
+        <MultipleInputQuestion
+          question={["The", ",", "and", "of the", "must", ""]}
+          answer={[
+            "burst",
+            "collapse",
+            "tensile strength",
+            "drillstring componenet",
+            "not exceeded",
+          ]}
+        />
+        <FillInTheBlanks
+          question={["The", "within the", "must be", ""]}
+          answer={["bending stress", "drill string", "minimised"]}
+        />
+        <FillInTheBlanks
+          question={[
+            "The",
+            "must be able to provide all the",
+            "required for",
+            "",
+          ]}
+          answer={["drill collars", "weight", "drilling"]}
+        />
+        <FillInTheBlanks
+          question={["The", "must be", "to"]}
+          answer={[
+            "Bottom hole assembly",
+            "stabilised",
+            "control the direction of well",
+          ]}
+        />
+      </Essay2>
+      <MultipleInputQuestion
+        question="What are different types of string design"
+        answer={["Packed hole assembly", "Pendulum assembly"]}
+      />
+      <OneLineQuestion
+        question="What is packed hole assembly"
+        answer="Align the bit with the hole already drilled and minimise the rate of change in deviation"
+      />
+      <OneLineQuestion
+        question="What is pendulum assembly"
+        answer="First stabiliser is placed some distance behind the bit therefore it tend to decrease the angle of deviation of hole and tend to produce vertical hole"
+      />
+      <OneLineQuestion
+        question="What is collapse load"
+        answer="highest external pressure tending to collapse the string will occur at the bottom when the string is run empty into the well"
+      />
+      <OneLineQuestion
+        question="What is tension load"
+        answer="Tensile resistance of drill pipe and is usually derated by a design factor "
+      />
+      <OneLineQuestion
+        question="What is margin of overpull"
+        answer="It is the limit of the joint tensile strength to be kept as reserve during the design of the drill string for the over pull process during the pipe stuck off condition."
+      />
+      <OneLineQuestion
+        question="Why do we calculate MOP"
+        answer="Allows for extra forces applied to the drill string when pulling on stuck pipe"
+      />
+      <OneLineQuestion
+        question="What is burst pressure"
+        answer="limit of internal pressure against which a pipe can withstand without any burst failure"
+      />
+    </>
+  );
+};
+
+const DrillBits = () => {
+  return (
+    <>
+      <MultipleInputQuestion
+        question="What are types of bits"
+        answer={["Drag bits", "Roller cone bits", "Diamond bits", "PDC bits"]}
+      />
+      <OneLineQuestion
+        question="What is most commonly used bit"
+        answer="Tri cone roller bits"
+      />
+      <MultipleInputQuestion
+        question="What are characteristic of Drag bits"
+        answer={[
+          "No moving parts",
+          "Drill by gauging and scrapping action",
+          "Each blade has one nozzle which throws water jet to clean mud or cuttings from the blade surface",
+        ]}
+      />
+      <OneLineQuestion
+        question="In what type of formation drag bits were used"
+        answer="Soft and sticky formation"
+      />
+      <MultipleInputQuestion
+        question="Write about characteristic of drag bits blades"
+        answer={[
+          "Manufractured from various alloy steels",
+          "Hardfaced with tungsten carbide",
+        ]}
+      />
+      <MultipleInputQuestion
+        question="What are types of drag bits"
+        answer={["four blade", "Double blade", "Triple blade"]}
+      />
+      <OneLineQuestion
+        question="By what action diamond bit drills"
+        answer="Chipping and grinding action"
+      />
+      <Essay
+        question="Explain about the manufacturing of diamond bit"
+        points={[
+          ["A", "is machined with", ""],
+          ["", "are placed in a", "and covered with", ""],
+          [
+            "With the",
+            "in position, the",
+            "is",
+            "till the",
+            "and then is allowed to",
+            "",
+          ],
+          [
+            "In this manner, the",
+            "are held in a",
+            ", which is attached to the",
+            "",
+          ],
+          ["The", "is composed of", "material"],
+          [
+            "The",
+            "must",
+            "at a sufficiently",
+            "so that",
+            "may not be",
+            "in the process",
+          ],
+          [
+            "The",
+            "in",
+            "are necessary in order to prevent the",
+            "and",
+            "in the",
+            "causing the",
+            "",
+          ],
+        ]}
+        answer={[
+          ["Steel bit blank", "threads"],
+          ["Diamonds", "bit mold", "powdered materials"],
+          [
+            "Bit blank",
+            "assembly",
+            "heated",
+            "Powdered materials fuses",
+            "cool",
+          ],
+          ["Diamonds", "matrix", "steel bit blank"],
+          ["Matrix", "hard tungsten carbide"],
+          [
+            "binder materials",
+            "melt",
+            "low temperature",
+            "diamonds",
+            "injured",
+          ],
+          [
+            "Hard particles",
+            "matrix",
+            "erosion",
+            "wear",
+            "bit",
+            "loss of diamonds",
+          ],
+        ]}
+      />
+    </>
+  );
+};
+
+// const Kick = () => {
+//   return (
+//     <>
+//       <OneLineQuestion
+//         question="What is kick tolerance"
+//         answer="Maximum gas volume for a given degree of underbalance which the circulation can be performed without exceeding the weakest formation in the wellbore"
+//       />
+//       <MultipleInputQuestion
+//         question="What are two factors used in determining kick tolerance"
+//         answer={["Kick intensity", "Kick volume"]}
+//       />
+//       <OneLineQuestion
+//         question="What is kick intensity"
+//         answer="Difference between the maximum anticipated formation pressure and planned mud weight"
+//       />
+//       <OneLineQuestion
+//         question="What is kick volume"
+//         answer="Gas influx entering the wellbore from the formation"
+//       />
+//       <OneLineQuestion question="What is Maximum allowable annular surface pressure" answer="Maximum surface" />
+
+//     </>
+
+//   );
+// };
+
 export const ForExamDrillingEnginneering = () => {
   return (
     <>
       {/* <RigComponent /> */}
       <Lec4 />
+      <DrillString />
+      <DrillBits />
     </>
   );
 };
